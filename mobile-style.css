@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: capitalize;
   outline: none;
   border: none;
   text-decoration: none;
@@ -153,7 +152,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding:3px; 
+  padding:3.4px; 
 }
 
 .food i{
@@ -178,7 +177,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 3px; 
+  padding: 3.4px; 
 }
 
 .service i{
@@ -203,7 +202,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 3px; 
+  padding: 3.4px; 
 }
 
 .help i{
@@ -228,7 +227,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 3px; 
+  padding: 3.4px; 
 }
 
 .history i{
