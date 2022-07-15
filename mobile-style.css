@@ -153,7 +153,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px; 
+  padding: 4px; 
 }
 
 .food i{
@@ -178,7 +178,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 4px;
 }
 
 .service i{
@@ -203,7 +203,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 4px;
 }
 
 .help i{
@@ -228,7 +228,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 4px;
 }
 
 .history i{
