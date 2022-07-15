@@ -23,7 +23,4 @@ let body = document.querySelector("body");
     )
   )
     window.location = b;
-})(
-  navigator.userAgent || navigator.vendor || window.opera,
-  "file:///C:/Aamplify/Projects/general/CiTravel/index.html"
-);
+})(navigator.userAgent || navigator.vendor || window.opera, "index.html");

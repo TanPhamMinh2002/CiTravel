@@ -12,5 +12,5 @@ let body = document.querySelector("body");
     window.location = b;
 })(
   navigator.userAgent || navigator.vendor || window.opera,
-  "file:///C:/Aamplify/Projects/general/CiTravel/mobile-index.html"
+  "mobile-index.html"
 );
