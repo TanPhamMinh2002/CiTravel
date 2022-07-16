@@ -118,7 +118,7 @@ header ~ img{
 }
 
 section{ 
-  padding:1.4rem 4%;
+  padding:1.4rem 6%;
 }
 
 .welcome h1{
@@ -141,7 +141,7 @@ section{
   text-align: center;
   align-items: center;
   color:#333333;
-  font-size: 7.4px;
+  font-size: 6.4px;
   font-weight: 700;
 }
 
