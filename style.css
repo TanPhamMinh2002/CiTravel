@@ -241,7 +241,7 @@ section{
   margin-bottom: 40px;
 }
 
-.for-u .post-box{
+.post-box{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -251,26 +251,27 @@ section{
   color: #484848;
 }
 
-.for-u .post-box .post {
+.post-box .post {
   overflow: hidden;
+  flex: 0 1 402.69px;
 }
 
-.for-u .post-box .post img {
+.post-box .post img {
   height:358.42px;
-  width: 402.69px;
+  width: 100%;
   object-fit: cover;
   padding-bottom: 1.4rem;
   border-radius: 12.6501px;
 }
 
-.for-u .post-box .post .content h3{
+.post-box .post .content h3{
   padding-bottom: 0.4rem;
 }
 
-.for-u .post-box .post .content p{
+.post-box .post .content p{
   padding-bottom: 1rem;
 }
 
-.for-u .post-box .post .content i{
+.post-box .post .content i{
   padding-bottom: 3.4rem;
 }

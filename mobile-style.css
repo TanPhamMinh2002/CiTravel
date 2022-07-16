@@ -260,7 +260,7 @@ section{
   color:#484848;
 }
 
-.for-u .post-box{
+.post-box{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -270,27 +270,53 @@ section{
   color: #484848;
 }
 
-.for-u .post-box .post {
+.post-box .post {
   overflow: hidden;
+  flex: 0 1 328px;
 }
 
-.for-u .post-box .post img {
+.post-box .post img {
   height:131px;
-  width: 328px;
+  width: 100%;
   object-fit: cover;
   padding-bottom: .4rem;
   border-radius: 10px;
   object-position: 100% 10%;
 }
 
-.for-u .post-box .post h3{
+.post-box .post h3{
   font-size: 18px;
   font-weight: 600;
   padding-bottom: .14rem;
 }
 
-.for-u .post-box .post p{
+.post-box .post p{
   font-size: 12px;
   font-weight: 400;
   padding-bottom: 6%;
+}
+/*Amenities*/
+.amenities .post-box .post h3{
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: .14rem;
+}
+
+.amenities .post-box .post p{
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 6%;
+}
+
+.amenities .post-box .post {
+  flex: 0 1 140px;
+}
+
+.amenities .post-box .post img {
+  height:120.57px;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: .4rem;
+  border-radius: 12.0568px;
+  object-position: 34% 32%;
 }
