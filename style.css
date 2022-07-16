@@ -210,23 +210,51 @@ section{
   margin-bottom: 14%;
 }
 
-.for-u{
+.h1-container{
   display: flex; 
   justify-content: space-between;
   align-items: center;
 }
 
-.for-u p{
+.h1-container p{
   color:#CF1607;
   font-size: 18px;
   font-weight: 700;
 }
 
-.h1-foru-container{
+.h1-container{
   color:#484848;
 }
 
-.h1-foru-container h1{
+.h1-container h1{
   font-size: 38px;
   font-weight: 700;
+}
+
+.underline{
+  background-color: #484848;
+  width: 147.58px;
+  height: 6.33px;
+  border-radius: 3.1652px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.for-u .post-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.for-u .post-box .post {
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.for-u .post-box .post img {
+  height:25rem;
+  width: 100%;
+  object-fit: cover;
 }

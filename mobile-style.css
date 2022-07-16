@@ -138,11 +138,11 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  text-align: left;
+  text-align: center;
   align-items: center;
   color:#333333;
-  font-size: 12px;
-  font-weight: 550;
+  font-size: 7.4px;
+  font-weight: 700;
 }
 
 .food{
