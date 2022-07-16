@@ -40,7 +40,7 @@ html{
 }
 
 #menu-bar.active{
-  color:#484848
+  color:#484848;
 }
 
 header{
@@ -97,18 +97,11 @@ header .navbar.active{
   z-index: -1;
 }
 
-header .navbar .featuredestinations{
-  display: none;
-}
-
 header .logo.active{
   color:#333333;
   font-size: 1.8rem;
   font-weight: 540;
-}
-
-.navbtn, .nav-img{
-  display: none;
+  padding-top: 20%;
 }
 
 header ~ img{
@@ -265,10 +258,6 @@ section{
   font-size: 18px;
   font-weight: 700;
   color:#484848;
-}
-
-.underline{
-  display: none;
 }
 
 .for-u .post-box{
