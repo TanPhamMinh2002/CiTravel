@@ -22,11 +22,12 @@ html{
   scroll-behavior: smooth;
 }
 
-.heading{
-  text-align: center;
-  padding:2.5rem 0;
+/*disable desktop view*/
+.lg-view{
+  display: none !important;
 }
 
+/*nav*/
 #menu-bar{
   position: absolute;
   color: #484848;
@@ -69,7 +70,7 @@ header .navbar{
   top: -120%;
   left: 0;
   z-index: 10000;
-  min-height: 80vh;
+  height: 100%;
   width: 100%;
   background:#fff;
   display: flex;
@@ -117,6 +118,7 @@ header ~ img{
   object-position: 80% 32%;
 }
 
+/*welcome section*/
 section{ 
   padding:1.4rem 6%;
 }
@@ -243,4 +245,63 @@ section{
   padding-bottom: 22px;
   border-radius: 6.88557px;
   margin-bottom: 4%;
+}
+
+/*Just For You*/
+.h1-container{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6%;
+}
+
+.h1-container p{
+  color:#CF1607;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.h1-container h1{
+  font-size: 18px;
+  font-weight: 700;
+  color:#484848;
+}
+
+.underline{
+  display: none;
+}
+
+.for-u .post-box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #484848;
+}
+
+.for-u .post-box .post {
+  overflow: hidden;
+}
+
+.for-u .post-box .post img {
+  height:131px;
+  width: 328px;
+  object-fit: cover;
+  padding-bottom: .4rem;
+  border-radius: 10px;
+  object-position: 100% 10%;
+}
+
+.for-u .post-box .post h3{
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: .14rem;
+}
+
+.for-u .post-box .post p{
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 6%;
 }

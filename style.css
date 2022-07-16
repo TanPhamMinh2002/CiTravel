@@ -22,11 +22,12 @@ html{
     scroll-behavior: smooth;
 }
 
-.heading{
-  text-align: center;
-  padding:2.5rem 0;
+/*disable mobile*/
+.sm-view{
+  display: none !important;
 }
 
+/*nav*/
 #menu-bar{
   color: #484848;
   font-size: 1.5rem;
@@ -50,14 +51,14 @@ header{
 }
 
 header .logo{
-  font-size: 2.4rem;
+  font-size: 36.9px;
   font-weight: 800;
   color: #484848;
 }
 
 header .navbar a{
   color: #484848;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   margin-left: 2rem;
 }
@@ -66,9 +67,9 @@ header .navbar .login{
   display: none;
 }
 
-.btn {
+.navbtn {
   border: none;
-  padding: 0.625rem 1.25rem;
+  padding: 0.9rem 2rem;
   border-radius: 1.515rem;
   background-color: #CF1607;
   display: inline-block;
@@ -84,6 +85,7 @@ header ~ img{
   object-position: 80% 32%;
 }
 
+/*welcome section*/
 section{ 
   padding:2rem 9%;
 }
@@ -111,7 +113,8 @@ section{
   text-align: center;
   align-items: center;
   color:#CF1607;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .food{
@@ -210,20 +213,18 @@ section{
   margin-bottom: 14%;
 }
 
+/*Just For You*/
 .h1-container{
   display: flex; 
   justify-content: space-between;
   align-items: center;
+  color:#484848;
 }
 
 .h1-container p{
   color:#CF1607;
   font-size: 18px;
   font-weight: 700;
-}
-
-.h1-container{
-  color:#484848;
 }
 
 .h1-container h1{
@@ -243,18 +244,33 @@ section{
 .for-u .post-box{
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #484848;
 }
 
 .for-u .post-box .post {
-  flex: 1 1 30rem;
-  border-radius: .5rem;
   overflow: hidden;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
 
 .for-u .post-box .post img {
-  height:25rem;
-  width: 100%;
+  height:358.42px;
+  width: 402.69px;
   object-fit: cover;
+  padding-bottom: 1.4rem;
+  border-radius: 12.6501px;
+}
+
+.for-u .post-box .post .content h3{
+  padding-bottom: 0.4rem;
+}
+
+.for-u .post-box .post .content p{
+  padding-bottom: 1rem;
+}
+
+.for-u .post-box .post .content i{
+  padding-bottom: 3.4rem;
 }

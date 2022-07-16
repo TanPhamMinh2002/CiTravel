@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CiTravel</title>
+    <title>CiTravelold</title>
 
     <!-- font awesome cdn link -->
     <link
@@ -12,14 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
 
-    <!-- swiper bundle -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-
     <!-- custome css file link -->
-    <link rel="stylesheet" href="style.css" />
+    <script src="device-detection.js"></script>
   </head>
   <body>
     <!--header section-->
@@ -33,7 +27,10 @@
           >Featured Destinations</a
         >
         <a href="#justforyou">Just For You</a>
-        <a href="#becomeahost" class="btn navbtn" style="color: #fff"
+        <a
+          href="#becomeahost"
+          class="btn navbtn"
+          style="color: #fff; font-size: 14px"
           >Become A Host</a
         >
         <a href="#login" class="login">Login</a>
@@ -67,15 +64,102 @@
     <section class="for-u">
       <div class="h1-container">
         <div class="h1-foru-container">
-          <h1>Just <br />For You</h1>
+          <h1 class="lg-view">Just <br />For You</h1>
+          <h1 class="sm-view">Just For You</h1>
           <div class="underline"></div>
         </div>
         <p>View all ></p>
       </div>
 
-      <div class="post-box">
+      <!--desktop posts-->
+      <div class="post-box lg-view">
         <div class="post">
           <img src="img/1.jpg" alt="" />
+          <div class="content">
+            <h3>Well Furnished Apartment</h3>
+            <p>100 Dong Khoi, Ho Chi Minh</p>
+            <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="post">
+          <img src="img/2.jpg" alt="" />
+          <div class="content">
+            <h3>Blue Door Villa Modern</h3>
+            <p>Phu Quoc, Vietnam</p>
+            <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="img/3.jpg" alt="" />
+          <div class="content">
+            <h3>Beach House Apartment</h3>
+            <p>Phu Quoc, Vietnam</p>
+            <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="img/4.jpg" alt="" />
+          <div class="content">
+            <h3>Country Boys Hotel</h3>
+            <p>Nha Trang, Vietnam</p>
+            <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="img/6.jpg" alt="" />
+          <div class="content">
+            <h3>Well Furnished Apartment</h3>
+            <p>Ha Noi, Vietnam</p>
+            <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="img/5.jpg" alt="" />
+          <div class="content">
+            <h3>Large Family Flat on Rent</h3>
+            <p>Sai Gon, Vietnam</p>
+            <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <!--mobile posts-->
+      <div class="post-box sm-view">
+        <div class="post">
+          <img src="img/7.jpg" alt="" />
+          <div class="content">
+            <h3>50% Discount on birthday</h3>
+            <p>Apply for Food & Beverage, Spa and Private party</p>
+          </div>
+        </div>
+        <div class="post">
+          <img src="img/8.jpg" alt="" />
+          <div class="content">
+            <h3>Free 30 minutes foot massage</h3>
+            <p>Apply for Sakura Spa</p>
+          </div>
         </div>
       </div>
     </section>
