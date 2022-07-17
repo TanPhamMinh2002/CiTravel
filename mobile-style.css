@@ -88,6 +88,17 @@ header .navbar a{
   color: #333333;
 }
 
+header .navbar .social {
+  position:relative;
+  left:-14.4px;
+  top:100px;
+}
+
+header .navbar .social a{
+  font-size: 3rem;
+  padding-right: 0rem;
+}
+
 header .navbar .login{
   display: initial;
 }
