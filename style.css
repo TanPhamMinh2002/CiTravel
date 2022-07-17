@@ -112,9 +112,12 @@ section{
   justify-content: start;
   text-align: center;
   align-items: center;
-  color:#CF1607;
   font-size: 20px;
   font-weight: 700;
+}
+
+.wel-container a{
+  color:#CF1607;
 }
 
 .food{

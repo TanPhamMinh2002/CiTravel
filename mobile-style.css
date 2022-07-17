@@ -305,6 +305,11 @@ section{
   font-weight: 400;
   padding-bottom: 6%;
 }
+
+.post-box .post p,h3{
+  color:#484848 !important;
+}
+
 /*Amenities*/
 .amenities .post-box .post h3{
   font-size: 14px;
