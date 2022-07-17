@@ -2,7 +2,7 @@ let menu = document.querySelector("#menu-bar");
 let navbar = document.querySelector(".navbar");
 let logo = document.querySelector(".logo");
 
-window.onscroll = () => {
+onscroll = () => {
   menu.classList.remove("fa-times");
   menu.classList.remove("active");
   navbar.classList.remove("active");
