@@ -31,3 +31,26 @@ menu.addEventListener("click", () => {
   navbar.classList.toggle("active");
   logo.classList.toggle("active");
 });
+
+const url = "data.json";
+
+function getResData() {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      const { reservation_code, firstname } = data;
+      const res_input = document.getElementById("reservation").value;
+      const name_input = document.getElementById("firstname").value;
+
+      if (res_input != reservation_code) {
+        alert("Wrong");
+      }
+
+      if (name_input != firstname) {
+        alert("Wrong");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
