@@ -114,6 +114,7 @@ header .logo.active{
 
 header .navbar.active .logonav {
   font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 header ~ img{
