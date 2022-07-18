@@ -100,11 +100,11 @@ header .navbar .login{
 
 header .navbar.active{
   top:0;
+  position: relative;
   z-index: -1;
 }
 
 header .navbar.active a{
-  position: relative;
   top:-10vh;
 }
 
@@ -129,6 +129,7 @@ header .logo .active{
     color: #fff;
     position: absolute;
     top:14%;
+    position:relative;
     z-index: -2;
   }
 
@@ -149,6 +150,8 @@ section{
 
 /*Search Container*/
 .search-container{
+  position: relative;
+  z-index: 0;
   width: 100%;
   height: 390px;
   background: #FFFFFF;
