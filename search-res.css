@@ -229,8 +229,8 @@ section{
 /*Just For You*/
 .justforu {
   position: absolute;
-  top:36rem;
-  width: 100%;
+  width: 88%;
+  margin-top: 2rem;
 }
   .justforu .title {
     display: flex;
@@ -257,7 +257,7 @@ section{
   justify-content: space-around;
   align-items: center;  
   gap: .4rem;
-  padding-top: 1.4rem;
+  padding-top: 1rem;
 }
   .post-box .post {
     flex: 0 1 100px;
