@@ -145,6 +145,8 @@ header .navbar.active .logonav {
   .title .content p{
     font-size: 0.875rem;
     font-weight: 500;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
 section{ 
