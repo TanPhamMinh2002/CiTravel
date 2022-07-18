@@ -21,7 +21,8 @@
       <div id="menu-bar" class="fas fa-bars"></div>
       <a href="#" class="logo">CiTravel</a>
       <nav class="navbar">
-        <a href="#checkin">Check in</a>
+        <a class="lg-view" href="#checkin">Check in</a>
+        <a class="sm-view" href="search-res.html">Check in</a>
         <a href="#specialoffers">Special Offers</a>
         <a href="#featuredestinations" class="featuredestinations lg-view"
           >Featured Destinations</a
@@ -42,34 +43,49 @@
       </nav>
     </header>
 
-    <div class="search-bar">
+    <!--Search Reservation-->
+    <div class="search-bar lg-view">
       <img src="img/topimg.jpg" class="nav-img lg-view" />
+      <div class="content">
+        <h1>FIND</h1>
+        <div class="checkin">
+          <h3>Check in</h3>
+          <div class="underline"></div>
+        </div>
+      </div>
       <div class="search-box">
         <form action="">
-          <div class="qr-code"></div>
-          <div class="reservation-input">
-            <label for="reservation"
-              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reservation</label
-            >
-            <input
-              type="password"
-              id="reservation"
-              placeholder="      Type your Itinerary or Confirmation"
-            />
+          <div class="bg-qr-search">
+            <div class="qr-search">
+              <h3>Scan <br />QrCode</h3>
+              <a href="#"><i class="fa-solid fa-qrcode"></i></a>
+            </div>
+          </div>
+          <div class="bg-reservation-input">
+            <div class="reservation-input">
+              <label for="reservation">Reservation</label>
+              <input
+                type="search"
+                id="reservation"
+                placeholder="Type your Itinerary or Confirmation"
+              />
+            </div>
           </div>
 
           <div class="firstname-input">
-            <label for="firstname"
-              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</label
-            >
+            <label for="firstname">First Name</label>
             <input
               type="username"
               id="firstname"
-              placeholder="      Type first name"
+              placeholder="Type first name"
             />
           </div>
 
-          <input type="submit" value="✉" />
+          <div class="bg-search-btn">
+            <div class="search-btn">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -299,8 +315,10 @@
       </div>
 
       <form action="">
-        <input type="email" placeholder="      Your Email..." />
-        <input type="submit" value="✉" />
+        <div class="email-input">
+          <input type="email" placeholder="Your Email..." />
+          <input type="submit" value="✉" />
+        </div>
       </form>
     </div>
 

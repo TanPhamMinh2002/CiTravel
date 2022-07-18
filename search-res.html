@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online check in</title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="search-res.css" />
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" class="logo">CiTravel</a>
+      <nav class="navbar">
+        <a href="search-res.html">Check in</a>
+        <a href="#specialoffers">Special Offers</a>
+        <a href="#justforyou">Just For You</a>
+        <a href="#login" class="login">Login</a>
+
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!--Page Title-->
+    <div class="title">
+      <img src="img/topimg.jpg" />
+      <div class="content">
+        <h2>Online check in</h2>
+        <p>
+          Enter the following information to locate and confirm your booking,
+          and start online check in
+        </p>
+      </div>
+    </div>
+
+    <!--Search Res-->
+    <section class="search-container">
+      <h2>Search Reservation</h2>
+      <div class="search-input">
+        <form action="">
+          <label for="reservation">Reservation</label>
+          <div class="input-container">
+            <input
+              type="search"
+              id="reservation"
+              placeholder="Type your Itinerary or Confirmation"
+            />
+          </div>
+
+          <label for="firstname">First Name</label>
+          <div class="input-container">
+            <input
+              type="username"
+              id="firstname"
+              placeholder="Type first name"
+            />
+          </div>
+
+          <a class="btn" href="#">
+            <p>Search</p>
+          </a>
+
+          <div class="qr-search">
+            <p>Or Scan QrCode</p>
+            <a href="#"><i class="fa-solid fa-qrcode"></i></a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--Just For You-->
+    <section class="justforu">
+      <div class="title">
+        <h2>Just For You</h2>
+        <a href="#">See All <i class="fa-solid fa-caret-right"></i></a>
+      </div>
+
+      <div class="post-box">
+        <a class="post" href="#">
+          <img src="img/9.jpg" alt="" />
+          <div class="content">
+            <h3>Luxirious holiday with ultimate...</h3>
+          </div>
+        </a>
+        <a class="post" href="#">
+          <img src="img/10.jpg" alt="" />
+          <div class="content">
+            <h3>Vinpearl Golf Stay & Play - 3N2D...</h3>
+          </div>
+        </a>
+        <a class="post" href="#">
+          <img src="img/11.jpg" alt="" />
+          <div class="content">
+            <h3>Discover Tuesday - book CiTravel...</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- custome js file link -->
+    <script src="main.js"></script>
+  </body>
+</html>

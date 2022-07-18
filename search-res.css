@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap');
+
+:root{
+    --red:#CF1607;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear; 
+}
+
+html{
+  font-size:100%;
+  overflow-x: auto;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+/*nav*/
+#menu-bar{
+  position: absolute;
+  color: #484848;
+  font-size: 1.5rem;
+  cursor:pointer;
+  display:initial;
+  color: #fff;
+  z-index: 0;
+  padding:.4rem .5rem;
+}
+
+#menu-bar.active{
+  color:#484848;
+}
+
+header{
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  background:#020a74;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 1rem 5%;
+  box-shadow: 0px 3px 22.5px rgba(0, 0, 0, 0.08);
+  z-index: 0;
+}
+
+header .logo{
+  font-size: 1.4rem;
+  margin: 0 auto;
+  font-weight: 500;
+  color: #fff;
+}
+
+header .navbar{
+  position:fixed;
+  top: -120%;
+  left: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background:#fff;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+
+header .navbar a{
+  border-radius: .5rem;
+  padding:1.4rem;
+  font-size: 1.6rem;
+  font-weight: 540;
+  background:#fff;
+  color: #333333;
+}
+
+header .navbar .social {
+  position:relative;
+  left:-14.4px;
+  top:120px;
+}
+
+header .navbar .social a{
+  font-size: 3rem;
+  padding-right: 0rem;
+}
+
+header .navbar .login{
+  display: initial;
+}
+
+header .navbar.active{
+  top:0;
+  z-index: -1;
+}
+
+header .logo.active{
+  color:#333333;
+  font-size: 1.8rem;
+  font-weight: 540;
+  padding-top: 20%;
+}
+
+/*Title*/
+.title img{
+  height: 174px;
+  width:100%;
+  object-fit: cover;
+  object-position: 0 34%;
+  filter: brightness(64%);
+}
+
+  /*Content title*/
+  .title .content{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:14%;
+  }
+
+  .title .content h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+  }
+
+  .title .content p{
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+section{ 
+  padding:1rem 6%;
+}
+
+/*Search Container*/
+.search-container{
+  position: absolute;
+  width: 100%;
+  height: 390px;
+  background: #FFFFFF;
+  border: 0.52825px solid #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  top:30%;
+}
+
+  .search-container h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333333;
+    padding-bottom: 1rem;
+  }
+
+  .search-container form{
+    display: flex;
+    flex-direction: column;
+  }
+
+    .search-container form label{
+      font-size: 0.75rem;
+      font-weight: 400;
+      color:#828282;
+      padding-bottom: .4rem;
+    }
+
+    .search-container form .input-container{
+      width: 100%;
+      height: 44px;
+      border: 0.5px solid #B2BCCA;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .search-container form input{
+      margin-top: .8rem;
+      margin-left: .6rem;
+      width: 94%;
+    }
+      .search-container form input ::placeholder{
+        font-size: 0.875rem;
+        font-weight: 500;
+        color:#c2c6cc;
+      }
+
+    /*Search btn*/
+    .search-container .btn {
+      width: 100%;
+      height: 48px;
+      background: #CF1607;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .2rem;
+    }
+      .search-container .btn p{
+        font-size: 0.875rem;
+        font-weight: 600;
+        color:#fff;
+      }
+
+    /*Scan QrCode*/
+    .search-container .qr-search{
+      display: block;
+      text-align: center;
+    }
+      .search-container .qr-search p{
+        color:#484848;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .search-container .qr-search a{
+        color:#CF1607;
+        font-size: 2.4rem;
+      }
+
+/*Just For You*/
+.justforu {
+  position: absolute;
+  top:94vh;
+  width: 100%;
+}
+  .justforu .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .justforu .title h2 {
+    color:#333333;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .justforu .title a {
+    color:#CF1607;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+/*Posts*/
+.post-box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;  
+  gap: .4rem;
+  padding-top: 1.4rem;
+}
+  .post-box .post {
+    flex: 0 1 100px;
+  }
+
+  .post-box .post img {
+    height:80px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3.43474px;
+  }
+
+  .post-box .post h3{
+    color: #484848;
+    font-size: 10px;
+    font-weight:400;
+  }
+      
