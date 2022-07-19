@@ -427,6 +427,11 @@ section{
     flex: 0 1 402.69px;
   }
 
+  .post-box .post:hover{
+    background: #f4f0f0;
+    border-radius: 10px;
+  }
+
   .post-box .post img {
     height:358.42px;
     width: 100%;
