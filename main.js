@@ -12,7 +12,6 @@ function doSomething() {
   navbar.classList.remove("active");
   logo.classList.remove("active");
 }
-
 document.addEventListener("scroll", function (e) {
   lastKnownScrollPosition = window.scrollY;
 
@@ -36,7 +35,6 @@ menu.addEventListener("click", () => {
 
 //fetch local API data
 const url = "data.json";
-
 function getResData() {
   fetch(url)
     .then((res) => res.json())
@@ -86,3 +84,13 @@ function getResData() {
       console.error(error);
     });
 }
+
+//Generate OTP
+const generateOtp = (optLength) => {
+  let otp = "";
+  for (let i = 0; i < optLength; i++) {
+    opt += Math.floor(Math.random() * 10);
+  }
+  //return otp;
+  return Number(otp);
+};

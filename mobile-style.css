@@ -39,10 +39,10 @@ html{
   padding:.4rem .5rem;
 }
 
-#menu-bar.active{
-  top:1.4vh;
-  color:#484848;
-}
+  #menu-bar.active{
+    top:1.4vh;
+    color:#484848;
+  }
 
 header{
   position:relative;
@@ -66,6 +66,10 @@ header .logo{
   color: #fff;
 }
 
+  header .logo.active{
+    display: none;
+  }
+
 header .navbar{
   position:fixed;
   top: -120%;
@@ -80,50 +84,46 @@ header .navbar{
   justify-content:center;
 }
 
-header .navbar a{
-  border-radius: .5rem;
-  padding:1.4rem;
-  font-size: 1.6rem;
-  font-weight: 540;
-  background:#fff;
-  color: #333333;
-}
+  header .navbar a{
+    border-radius: .5rem;
+    padding:1.4rem;
+    font-size: 1.6rem;
+    font-weight: 540;
+    background:#fff;
+    color: #333333;
+  }
 
-header .navbar .social {
-  position:relative;
-  left:-14.4px;
-  margin-top: 4rem;
-}
+  header .navbar .social {
+    position:relative;
+    left:-14.4px;
+    margin-top: 4rem;
+  }
 
-header .navbar .social a{
-  font-size: 3rem;
-  padding-right: 0rem;
-}
+    header .navbar .social a{
+      font-size: 3rem;
+      padding-right: 0rem;
+    }
 
-header .navbar .login{
-  display: initial;
-}
+  header .navbar .login{
+    display: initial;
+  }
 
-header .navbar.active{
-  top:0;
-  z-index: -1;
-}
+  header .navbar.active{
+    top:0;
+    z-index: -1;
+  }
 
-header .logo.active{
-  display: none;
-}
+    header .navbar.active .logonav {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
 
-header .navbar.active .logonav {
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-}
-
-header ~ img{
-  height:200px;
-  width:100%;
-  object-fit: cover;
-  object-position: 80% 32%;
-}
+  header ~ img{
+    height:200px;
+    width:100%;
+    object-fit: cover;
+    object-position: 80% 32%;
+  }
 
 /*welcome section*/
 section{ 
@@ -166,18 +166,18 @@ section{
   padding:4px; 
 }
 
-.food i{
-  font-size:2rem;
-  color: #fff;
-  cursor:pointer;
-  background-color: #ff1f32;
-  text-align: center;
-  padding: 10px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  border-radius: 6.88557px;
-  margin-bottom: 4%;
-}
+  .food i{
+    font-size:2rem;
+    color: #fff;
+    cursor:pointer;
+    background-color: #ff1f32;
+    text-align: center;
+    padding: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-radius: 6.88557px;
+    margin-bottom: 4%;
+  }
 
 .service{
   display: flex;
@@ -191,18 +191,18 @@ section{
   padding: 4px; 
 }
 
-.service i{
-  font-size:2rem;
-  color: #fff;
-  cursor:pointer;
-  background-color: #5ac8fa;
-  text-align: center;
-  padding: 10px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  border-radius: 6.88557px;
-  margin-bottom: 4%;
-}
+  .service i{
+    font-size:2rem;
+    color: #fff;
+    cursor:pointer;
+    background-color: #5ac8fa;
+    text-align: center;
+    padding: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-radius: 6.88557px;
+    margin-bottom: 4%;
+  }
 
 .help{
   display: flex;
@@ -216,18 +216,18 @@ section{
   padding: 4px; 
 }
 
-.help i{
-  font-size:2rem;
-  color: #fff;
-  cursor:pointer;
-  background-color: #ff9017;
-  text-align: center;
-  padding: 10px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  border-radius: 6.88557px;
-  margin-bottom: 4%;
-}
+  .help i{
+    font-size:2rem;
+    color: #fff;
+    cursor:pointer;
+    background-color: #ff9017;
+    text-align: center;
+    padding: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-radius: 6.88557px;
+    margin-bottom: 4%;
+  }
 
 .history{
   display: flex;
@@ -241,18 +241,18 @@ section{
   padding: 4px; 
 }
 
-.history i{
-  font-size:2rem;
-  color: #fff;
-  cursor:pointer;
-  background-color: #8a2be2;
-  text-align: center;
-  padding: 10px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  border-radius: 6.88557px;
-  margin-bottom: 4%;
-}
+  .history i{
+    font-size:2rem;
+    color: #fff;
+    cursor:pointer;
+    background-color: #8a2be2;
+    text-align: center;
+    padding: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-radius: 6.88557px;
+    margin-bottom: 4%;
+  }
 
 /*Just For You*/
 .h1-container{
@@ -262,17 +262,17 @@ section{
   padding-bottom: 10%;
 }
 
-.h1-container a{
-  color:#CF1607;
-  font-size: 14px;
-  font-weight: 700;
-}
+  .h1-container a{
+    color:#CF1607;
+    font-size: 14px;
+    font-weight: 700;
+  }
 
-.h1-container h1{
-  font-size: 18px;
-  font-weight: 700;
-  color:#484848;
-}
+  .h1-container h1{
+    font-size: 18px;
+    font-weight: 700;
+    color:#484848;
+  }
 
 .post-box{
   display: flex;
@@ -284,57 +284,55 @@ section{
   color: #484848;
 }
 
-.post-box .post {
-  flex: 0 1 328px;
-}
+  .post-box .post {
+    flex: 0 1 328px;
+  }
 
-.post-box .post img {
-  height:131px;
-  width: 100%;
-  object-fit: cover;
-  padding-bottom: .4rem;
-  border-radius: 10px;
-  object-position: 100% 10%;
-}
+    .post-box .post img {
+      height:131px;
+      width: 100%;
+      object-fit: cover;
+      padding-bottom: .4rem;
+      border-radius: 10px;
+      object-position: 100% 10%;
+    }
 
-.post-box .post h3{
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom: .14rem;
-}
+    .post-box .post h3{
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: .14rem;
+    }
 
-.post-box .post p{
-  font-size: 12px;
-  font-weight: 400;
-  padding-bottom: 6%;
-}
+    .post-box .post p{
+      font-size: 12px;
+      font-weight: 400;
+      padding-bottom: 6%;
+    }
 
-.post-box .post p,h3{
-  color:#484848 !important;
-}
+    .post-box .post p,h3{
+      color:#484848 !important;
+    }
 
 /*Amenities*/
-.amenities .post-box .post h3{
-  font-size: 14px;
-  font-weight: 600;
-  padding-bottom: .14rem;
-}
-
-.amenities .post-box .post p{
-  font-size: 12px;
-  font-weight: 300;
-  padding-bottom: 6%;
-}
-
 .amenities .post-box .post {
   flex: 0 1 140px;
 }
+  .amenities .post-box .post h3{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: .14rem;
+  }
+  .amenities .post-box .post p{
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 6%;
+  }
+  .amenities .post-box .post img {
+    height:120.57px;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: .4rem;
+    border-radius: 12.0568px;
+    object-position: 34% 32%;
+  }
 
-.amenities .post-box .post img {
-  height:120.57px;
-  width: 100%;
-  object-fit: cover;
-  padding-bottom: .4rem;
-  border-radius: 12.0568px;
-  object-position: 34% 32%;
-}
