@@ -206,6 +206,18 @@ header{
       margin-top: .4rem;
     }
 
+/*Error Message*/
+#popup{
+  display: none;
+}
+#popup.active{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  color:#CF1607;
+}
   /*Search btn*/
   .search-bar .bg-search-btn{
     width: 60px;
@@ -213,7 +225,7 @@ header{
     border-radius: 0 2.306rem 2.306rem 0;
   }
 
-    .search-bar .search-btn{
+    .search-bar .btn{
       background: #CF1607;
       width: 74px;
       height: 74px;
@@ -225,7 +237,11 @@ header{
       left: -12px;
     }
 
-      .search-bar .search-btn i{
+    .search-bar .btn:hover{
+      background: #e61c09;
+    }
+
+      .search-bar .btn i{
         font-size: 2rem;
         color: #fff;
       }

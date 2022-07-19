@@ -56,9 +56,7 @@ function getResData() {
             j++
           ) {
             if (name_input == data[i].firstnames[j]) {
-              document.getElementById("search-btn").onclick = function () {
-                location.href = "index.html";
-              };
+              location.href = "index.html";
               verified_firstname = true;
             }
           }
