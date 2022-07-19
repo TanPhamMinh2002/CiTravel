@@ -42,30 +42,29 @@ function getResData() {
       const res_input = document.getElementById("reservation").value;
       const name_input = document.getElementById("firstname").value;
 
-      let verified = false;
+      let verified_res = false;
+      let verified_firstname = false;
       for (let i = 0; i < parseInt(JSON.stringify(data.length)); i++) {
-        if (String(res_input) == JSON.stringify(data[i].reservation_code)) {
+        if (res_input == data[i].reservation_code) {
+          verified_res = true;
           for (
             let j = 0;
             j < parseInt(JSON.stringify(data[i].firstnames.length));
             j++
           ) {
-            if (String(name_input) == JSON.stringify(data[i].firstnames[j])) {
+            if (name_input == data[i].firstnames[j]) {
               alert("Success!");
-              verified = true;
+              verified_firstname = true;
             }
           }
         }
       }
 
-      if (verified == false) {
-        //alert("Wrong");
-        console.log(JSON.stringify(data[0].firstnames[0]));
-        console.log(String(name_input));
-        if (
-          !(String(name_input) == String(JSON.stringify(data[0].firstnames[0])))
-        ) {
-          console.log("yayy");
+      if (!verified_res) {
+        alert("Wrong Reservation Code");
+      } else {
+        if (!verified_firstname) {
+          alert("Wrong first name");
         }
       }
     })
