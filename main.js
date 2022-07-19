@@ -65,14 +65,20 @@ function getResData() {
 
       //Error Message
       let popup = document.querySelector("#popup");
-      if (!verified_res && !verified_firstname) {
+      if (res_input == "" || name_input == "") {
         popup.classList.toggle("active");
         document.getElementById("popup").innerText =
-          "Invalid Reservation Code!";
+          "Cannot proceed with blank input(s)";
       } else {
-        if (!verified_firstname) {
+        if (!verified_res && !verified_firstname) {
           popup.classList.toggle("active");
-          document.getElementById("popup").innerText = "Invalid First Name";
+          document.getElementById("popup").innerText =
+            "Invalid Reservation Code!";
+        } else {
+          if (!verified_firstname) {
+            popup.classList.toggle("active");
+            document.getElementById("popup").innerText = "Invalid First Name";
+          }
         }
       }
     })
