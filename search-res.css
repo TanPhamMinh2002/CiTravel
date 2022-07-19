@@ -392,3 +392,7 @@ section{
 #confirm_btn:disabled{
   background: #dddddd;
 }
+
+#phone_getcode:disabled{
+  background: #dddddd;
+}

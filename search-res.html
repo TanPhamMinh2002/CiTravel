@@ -121,7 +121,11 @@
         <div class="email-otp input-container">
           <div class="input-box">
             <input type="text" id="email_input" required />
-            <a href="javascript:void(0)" class="send" onclick="emailotp()"
+            <a
+              href="javascript:void(0)"
+              class="send"
+              id="email_getcode"
+              onclick="emailotp()"
               >Get Code</a
             >
           </div>
@@ -137,7 +141,9 @@
         <div class="phoneotp-otp input-container">
           <div class="input-box">
             <input type="text" id="phone_input" required />
-            <a href="javascript:void(0)" class="send">Get Code</a>
+            <a href="javascript:void(0)" class="send" id="phone_getcode"
+              >Get Code</a
+            >
           </div>
         </div>
 

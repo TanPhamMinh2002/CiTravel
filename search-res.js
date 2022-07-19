@@ -143,8 +143,8 @@ function emailotp() {
     Host: "smtp.elasticemail.com",
     Username: "citravel@gmail.com",
     Password: "A3430A884D6537392E4046A1C5B3A47371F4",
-    To: "tannedstone@gmail.com",
-    From: "citravel@gmail.com",
+    To: "vidientuledger@gmail.com",
+    From: "tannedstone@gmail.com",
     Subject: "CiTravel Email OTP Verification",
     Body: `Your OTP is ${otp_code}. Please do not share with anyone!`,
   })
@@ -152,14 +152,27 @@ function emailotp() {
     .catch((error) => {
       console.error(error);
     })
-    .then((email_code_status = true));
-}
-if (email_code_status) {
-  otp_form.addEventListener("input", () => {
-    if (email_input.value.length == 6) {
-      confirm_btn.disabled = false;
-    } else {
-      confirm_btn.disabled = true;
-    }
-  });
+    .then(
+      otp_form.addEventListener("input", () => {
+        if (email_input.value.length == 6) {
+          confirm_btn.disabled = false;
+        } else {
+          confirm_btn.disabled = true;
+        }
+      })
+    )
+    .then(() => {
+      var timeleft = 60;
+      var downloadTimer = setInterval(function () {
+        if (timeleft <= 0) {
+          clearInterval(downloadTimer);
+          document.getElementById("email_getcode").innerHTML = "Get Code";
+          phone_input.disabled = false;
+        } else {
+          phone_input.disabled = true;
+          document.getElementById("email_getcode").innerHTML = timeleft + "s";
+        }
+        timeleft -= 1;
+      }, 1000);
+    });
 }
