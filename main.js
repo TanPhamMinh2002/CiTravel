@@ -56,7 +56,9 @@ function getResData() {
             j++
           ) {
             if (name_input == data[i].firstnames[j]) {
-              alert("Success!");
+              document.getElementById("search-btn").onclick = function () {
+                location.href = "index.html";
+              };
               verified_firstname = true;
             }
           }
@@ -70,7 +72,7 @@ function getResData() {
         document.getElementById("popup").innerText =
           "Cannot proceed with blank input(s)";
       } else {
-        if (!verified_res && !verified_firstname) {
+        if (!verified_res) {
           popup.classList.toggle("active");
           document.getElementById("popup").innerText =
             "Invalid Reservation Code!";
