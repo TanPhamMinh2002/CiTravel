@@ -1,6 +1,7 @@
 let menu = document.querySelector("#menu-bar");
 let navbar = document.querySelector(".navbar");
 let logo = document.querySelector(".logo");
+let popup = document.querySelector("#popup");
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
@@ -63,7 +64,6 @@ function getResData() {
       }
 
       //Error Message
-      let popup = document.querySelector("#popup");
       if (res_input == "" || name_input == "") {
         popup.classList.toggle("active");
         document.getElementById("popup").innerText =
@@ -96,7 +96,7 @@ const generateOtp = (optLength) => {
 };
 let otp_code = generateOtp(6);
 
-//SMTP Module
+/*SMTP Module
 var Email = {
   send: function (a) {
     return new Promise(function (n, e) {
@@ -148,7 +148,12 @@ function emailotp() {
     Subject: "CiTravel Email OTP Verification",
     Body: `Your OTP is ${otp_code}. Please do not share with anyone!`,
   })
-    .then((message) => alert(message))
+    .then(() => {
+      let popupotp = document.querySelector("#popupotp");
+      popupotp.classList.toggle("active");
+      document.getElementById("popupotp").innerText =
+        "OTP has been sent to your email address. Please check your email box, even in Spam";
+    })
     .catch((error) => {
       console.error(error);
     })
@@ -175,4 +180,71 @@ function emailotp() {
         timeleft -= 1;
       }, 1000);
     });
+}*/
+
+//OTP Get Code
+function otp_email_getcode() {
+  alert(`Your OTP code is: ${otp_code}`);
+  let popupotp = document.querySelector("#popupotp");
+  popupotp.classList.toggle("active");
+  document.getElementById("popupotp").innerText =
+    "OTP has been sent to your email address. Please check your email box, even in Spam";
+  otp_form.addEventListener("input", () => {
+    if (email_input.value.length == 6) {
+      confirm_btn.disabled = false;
+    } else {
+      confirm_btn.disabled = true;
+    }
+  });
+  var timeleft = 60;
+  var downloadTimer = setInterval(function () {
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+      document.getElementById("email_getcode").innerHTML = "Get Code";
+      phone_input.disabled = false;
+    } else {
+      phone_input.disabled = true;
+      document.getElementById("email_getcode").innerHTML = timeleft + "s";
+    }
+    timeleft -= 1;
+  }, 1000);
+}
+
+//Phone OTP
+function otp_phone_getcode() {
+  alert(`Your OTP code is: ${otp_code}`);
+  let popupotp = document.querySelector("#popupotp");
+  popupotp.classList.toggle("active");
+  document.getElementById("popupotp").innerText =
+    "OTP has been sent to your mobile phone number. Please check your message";
+  otp_form.addEventListener("input", () => {
+    if (phone_input.value.length == 6) {
+      confirm_btn.disabled = false;
+    } else {
+      confirm_btn.disabled = true;
+    }
+  });
+  var timeleft = 60;
+  var downloadTimer = setInterval(function () {
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+      document.getElementById("phone_getcode").innerHTML = "Get Code";
+      email_input.disabled = false;
+    } else {
+      email_input.disabled = true;
+      document.getElementById("phone_getcode").innerHTML = timeleft + "s";
+    }
+    timeleft -= 1;
+  }, 1000);
+}
+
+//otp confirmation
+function otpverification() {
+  if (email_input.value == otp_code || phone_input.value == otp_code) {
+    document.getElementById("popupotp").innerText =
+      "OTP Verification Successful!";
+  } else {
+    document.getElementById("popupotp").innerText =
+      "OTP is invalid. Please try again!";
+  }
 }

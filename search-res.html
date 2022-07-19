@@ -115,7 +115,7 @@
 
     <!--Secure Verification-->
     <div class="otp">
-      <form action="" id="otp_form">
+      <form action="#" id="otp_form">
         <h2>Secure Verification</h2>
         <label for="email_input">Email verification code</label>
         <div class="email-otp input-container">
@@ -125,7 +125,7 @@
               href="javascript:void(0)"
               class="send"
               id="email_getcode"
-              onclick="emailotp()"
+              onclick="otp_email_getcode()"
               >Get Code</a
             >
           </div>
@@ -141,15 +141,25 @@
         <div class="phoneotp-otp input-container">
           <div class="input-box">
             <input type="text" id="phone_input" required />
-            <a href="javascript:void(0)" class="send" id="phone_getcode"
+            <a
+              href="javascript:void(0)"
+              class="send"
+              id="phone_getcode"
+              onclick="otp_phone_getcode()"
               >Get Code</a
             >
           </div>
         </div>
 
-        <pre id="popup">Hello</pre>
+        <pre id="popupotp"></pre>
 
-        <button class="btn" id="confirm_btn" disabled="disabled">
+        <button
+          class="btn"
+          id="confirm_btn"
+          href="#"
+          disabled="disabled"
+          onclick="otpverification()"
+        >
           <p>Confirm</p>
         </button>
       </form>
