@@ -113,9 +113,42 @@
       </div>
     </section>
 
-    <!--Security Verification-->
-    <section class="otp"></section>
+    <!--Secure Verification-->
+    <div class="otp">
+      <form action="" id="otp_form">
+        <h2>Secure Verification</h2>
+        <label for="email_input">Email verification code</label>
+        <div class="email-otp input-container">
+          <div class="input-box">
+            <input type="text" id="email_input" required />
+            <a href="javascript:void(0)" class="send" onclick="emailotp()"
+              >Get Code</a
+            >
+          </div>
+        </div>
+
+        <div class="or">
+          <span class="line"></span>
+          <p>Or</p>
+          <span class="line"></span>
+        </div>
+
+        <label for="phone_input">Phone verification code</label>
+        <div class="phoneotp-otp input-container">
+          <div class="input-box">
+            <input type="text" id="phone_input" required />
+            <a href="javascript:void(0)" class="send">Get Code</a>
+          </div>
+        </div>
+
+        <pre id="popup">Hello</pre>
+
+        <button class="btn" id="confirm_btn" disabled="disabled">
+          <p>Confirm</p>
+        </button>
+      </form>
+    </div>
     <!-- custome js file link -->
-    <script src="main.js"></script>
+    <script src="search-res.js"></script>
   </body>
 </html>

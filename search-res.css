@@ -64,7 +64,7 @@ header .navbar{
   position:fixed;
   top: -120%;
   left: 0;
-  z-index: 10000;
+  z-index: 1000;
   height: 100%;
   width: 100%;
   background:#fff;
@@ -153,6 +153,14 @@ section{
   padding:1rem 6%;
 }
 
+.input-container{
+  width: 100%;
+  height: 44px;
+  border: 0.5px solid #B2BCCA;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
 /*Search Container*/
 .search-container{
   width: 100%;
@@ -180,19 +188,11 @@ section{
       color:#828282;
       padding-bottom: .4rem;
     }
-
-    .search-container form .input-container{
-      width: 100%;
-      height: 44px;
-      border: 0.5px solid #B2BCCA;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
+  
     .search-container form input{
+      width: 94%;
       margin-top: .8rem;
       margin-left: .6rem;
-      width: 94%;
     }
       .search-container form input ::placeholder{
         font-size: 0.875rem;
@@ -205,7 +205,7 @@ section{
       display: none;
     }
       .search-container #popup.active{
-        display: initial;
+        display: block;
         color:#CF1607;
         font-size: 12px;
         font-weight: 600;
@@ -298,3 +298,97 @@ section{
     font-weight:400;
   }
 
+.otp{
+  position:fixed;
+  width: 100%;
+  top:0;
+  min-height: 100vh;
+  background:rgba(0,0,0,.7);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  z-index: 1000;
+}
+  .otp.active{
+    top:0;
+  }
+  .otp form{
+    padding:1rem 6%;
+    background:#fff;
+    width: 100%;
+    border: 0.52825px solid #FFFFFF;
+    border-radius: 20px;
+  }
+    .otp form h2{
+      font-size: 18px;
+      font-weight: 600;
+      color: #333333;
+      padding-bottom: 1rem;
+    }
+    .otp form label{
+      font-size: 0.75rem;
+      font-weight: 400;
+      color:#828282;
+      padding-bottom: .4rem;
+    }
+    .otp form .btn{
+      width: 100%;
+      height: 48px;
+      background: #CF1607;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .2rem;
+    }
+      .otp form .btn p{
+        font-size: 0.875rem;
+        font-weight: 600;
+        color:#fff;
+      }
+    .otp form input{
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+    .otp form .input-box{
+      display: flex;
+      justify-content: space-between;
+      margin: .8rem .8rem;
+    }
+    .otp form .send{
+      color:#CF1607;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  .otp form .or{
+    display: flex;
+    justify-content: center;
+  }
+    .otp form .or p{
+      font-size: 14px;
+      font-weight: 400;
+      color: #828282;
+      margin-bottom: .6rem;
+    }
+    .otp form .or .line{
+      width: 50px;
+      height: 0px;
+      margin: .44rem 1rem;
+      border: 1.05417px solid #E8EAEC;
+    }
+
+  .otp form #popup{
+    display: none;
+  }
+    .otp form #popup.active{
+      display: block;
+      color:#CF1607;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+#confirm_btn:disabled{
+  background: #dddddd;
+}
