@@ -5,6 +5,7 @@ let logo = document.querySelector(".logo");
 let lastKnownScrollPosition = 0;
 let ticking = false;
 
+//Nav Bar remove on scroll
 function doSomething() {
   menu.classList.remove("fa-times");
   menu.classList.remove("active");
@@ -25,6 +26,7 @@ document.addEventListener("scroll", function (e) {
   }
 });
 
+//Nav expands on click
 menu.addEventListener("click", () => {
   menu.classList.toggle("fa-times");
   menu.classList.toggle("active");
@@ -32,6 +34,7 @@ menu.addEventListener("click", () => {
   logo.classList.toggle("active");
 });
 
+//fetch local API data
 const url = "data.json";
 
 function getResData() {
@@ -60,11 +63,16 @@ function getResData() {
         }
       }
 
-      if (!verified_res) {
-        alert("Wrong Reservation Code");
+      //Error Message
+      let popup = document.querySelector("#popup");
+      if (!verified_res && !verified_firstname) {
+        popup.classList.toggle("active");
+        document.getElementById("popup").innerText =
+          "Invalid Reservation Code!";
       } else {
         if (!verified_firstname) {
-          alert("Wrong first name");
+          popup.classList.toggle("active");
+          document.getElementById("popup").innerText = "Invalid First Name";
         }
       }
     })
