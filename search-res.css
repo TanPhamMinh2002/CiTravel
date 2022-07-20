@@ -203,8 +203,8 @@ section{
     /*Message Pop UP*/
     .search-container #popup{
       visibility: hidden;
-      padding-top: .2rem;
-      padding-bottom: 1rem;
+      padding-top: 0rem;
+      padding-bottom: .8rem;
     }
       .search-container #popup.active{
         visibility: visible;
@@ -382,7 +382,6 @@ section{
 
   .otp form #popupotp{
     visibility: hidden;
-    padding-top: .2rem;
     padding-bottom: 1rem;
   }
     .otp form #popupotp.active{
