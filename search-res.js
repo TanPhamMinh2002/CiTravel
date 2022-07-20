@@ -196,15 +196,18 @@ function otp_email_getcode() {
       confirm_btn.disabled = true;
     }
   });
+  let phone_getcode = document.querySelector("#phone_getcode");
   var timeleft = 60;
   var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
       clearInterval(downloadTimer);
-      document.getElementById("email_getcode").innerHTML = "Get Code";
+      document.getElementById("email_getcode").innerHTML = "Try Again";
       phone_input.disabled = false;
+      phone_getcode.classList.remove("active");
     } else {
       phone_input.disabled = true;
       document.getElementById("email_getcode").innerHTML = timeleft + "s";
+      phone_getcode.classList.add("active");
     }
     timeleft -= 1;
   }, 1000);
@@ -224,14 +227,17 @@ function otp_phone_getcode() {
       confirm_btn.disabled = true;
     }
   });
+  let email_getcode = document.querySelector("#email_getcode");
   var timeleft = 60;
   var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
       clearInterval(downloadTimer);
-      document.getElementById("phone_getcode").innerHTML = "Get Code";
+      document.getElementById("phone_getcode").innerHTML = "Try Again";
       email_input.disabled = false;
+      email_getcode.classList.remove("active");
     } else {
       email_input.disabled = true;
+      email_getcode.classList.add("active");
       document.getElementById("phone_getcode").innerHTML = timeleft + "s";
     }
     timeleft -= 1;

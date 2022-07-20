@@ -301,7 +301,7 @@ section{
 .otp{
   position:fixed;
   width: 100%;
-  top:0;
+  top:120%;
   min-height: 100vh;
   background:rgba(0,0,0,.7);
   display: flex;
@@ -397,4 +397,13 @@ section{
 
 #phone_getcode:disabled{
   background: #dddddd;
+}
+
+#email_getcode.active{
+  color: #ddd;
+  pointer-events: none;
+}
+#phone_getcode.active{
+  color: #ddd;
+  pointer-events: none;
 }
