@@ -24,7 +24,6 @@ html{
 
 /*nav*/
 #menu-bar{
-  position: absolute;
   color: #484848;
   font-size: 1.5rem;
   cursor:pointer;
@@ -56,11 +55,11 @@ header{
 
 header .logo{
   font-size: 1.4rem;
-  margin: 0 auto;
   font-weight: 500;
   color: #fff;
   display: flex;
   align-items: center;
+  padding-right: 4%;
 }
   header .logo img{
     width: 2rem;
@@ -121,6 +120,10 @@ header .navbar.active .logonav {
     header .navbar.active .logonav img{
       width: 2.8rem;
     }
+header .account_settings{
+  font-size: 1.4rem;
+  color: #fff;
+}
 
 /*Title*/
 .title img{
