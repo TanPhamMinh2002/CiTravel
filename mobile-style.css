@@ -32,12 +32,10 @@ html{
   color: #484848;
   font-size: 1.5rem;
   cursor:pointer;
-  display:initial;
   color: #fff;
   z-index: 0;
   padding:.4rem .5rem;
 }
-
   #menu-bar.active{
     top:1.4vh;
     color:#484848;
@@ -58,84 +56,74 @@ header{
   z-index: 0;
 }
 
-header .logo{
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 4%;
-}
-  header .logo img{
-    width: 2rem;
+  header .logo{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-right: 4%;
   }
-
-  header .logo.active{
-    display: none;
-  }
-
-header .navbar{
-  position:fixed;
-  top: -200%;
-  left: 0;
-  z-index: 10000;
-  height: 100%;
-  width: 100%;
-  background:#fff;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-}
-
-  header .navbar a{
-    border-radius: .5rem;
-    padding:1.4rem;
-    font-size: 1.6rem;
-    font-weight: 540;
+    header .logo img{
+      width: 2rem;
+    }
+    header .logo.active{
+      display: none;
+    }
+  header .navbar{
+    position:fixed;
+    top: -200%;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
     background:#fff;
-    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
   }
 
-  header .navbar .social {
-    position:relative;
-    left:-14.4px;
-    margin-top: 4rem;
-  }
-
-    header .navbar .social a{
-      font-size: 3rem;
-      padding-right: 0rem;
+    header .navbar a{
+      border-radius: .5rem;
+      padding:1.4rem;
+      font-size: 1.6rem;
+      font-weight: 540;
+      background:#fff;
+      color: #333333;
     }
 
-  header .navbar .login{
-    display: initial;
-  }
-
-  header .navbar.active{
-    top:0;
-    z-index: -1;
-  }
-
-    header .navbar.active .logonav {
-      font-size: 2.4rem;
-      margin-bottom: 2rem;
-      display: flex;
-      align-items: center;
+    header .navbar .social {
+      position:relative;
+      left:-14.4px;
+      margin-top: 4rem;
     }
-        header .navbar.active .logonav img{
-          width: 2.8rem;
-        }
+
+      header .navbar .social a{
+        font-size: 3rem;
+        padding-right: 0rem;
+      }
+
+    header .navbar .login{
+      display: initial;
+    }
+
+    header .navbar.active{
+      top:0;
+      z-index: -1;
+    }
+      header .navbar.active .logonav {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+      }
+          header .navbar.active .logonav img{
+            width: 2.8rem;
+          }
   header .account_settings{
     font-size: 1.4rem;
     color: #fff;
-        }
-  header ~ img{
-    height:200px;
-    width:100%;
-    object-fit: cover;
-    object-position: 80% 32%;
   }
 
 /*welcome section*/
