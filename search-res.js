@@ -94,95 +94,9 @@ const generateOtp = (optLength) => {
   }
   return otp;
 };
-let otp_code = generateOtp(6);
-
-/*SMTP Module
-var Email = {
-  send: function (a) {
-    return new Promise(function (n, e) {
-      (a.nocache = Math.floor(1e6 * Math.random() + 1)), (a.Action = "Send");
-      var t = JSON.stringify(a);
-      Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) {
-        n(e);
-      });
-    });
-  },
-  ajaxPost: function (e, n, t) {
-    var a = Email.createCORSRequest("POST", e);
-    a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"),
-      (a.onload = function () {
-        var e = a.responseText;
-        null != t && t(e);
-      }),
-      a.send(n);
-  },
-  ajax: function (e, n) {
-    var t = Email.createCORSRequest("GET", e);
-    (t.onload = function () {
-      var e = t.responseText;
-      null != n && n(e);
-    }),
-      t.send();
-  },
-  createCORSRequest: function (e, n) {
-    var t = new XMLHttpRequest();
-    return (
-      "withCredentials" in t
-        ? t.open(e, n, !0)
-        : "undefined" != typeof XDomainRequest
-        ? (t = new XDomainRequest()).open(e, n)
-        : (t = null),
-      t
-    );
-  },
-};
-//Email OTP
-let email_code_status = false;
-function emailotp() {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "citravel@gmail.com",
-    Password: "A3430A884D6537392E4046A1C5B3A47371F4",
-    To: "vidientuledger@gmail.com",
-    From: "tannedstone@gmail.com",
-    Subject: "CiTravel Email OTP Verification",
-    Body: `Your OTP is ${otp_code}. Please do not share with anyone!`,
-  })
-    .then(() => {
-      let popupotp = document.querySelector("#popupotp");
-      popupotp.classList.toggle("active");
-      document.getElementById("popupotp").innerText =
-        "OTP has been sent to your email address. Please check your email box, even in Spam";
-    })
-    .catch((error) => {
-      console.error(error);
-    })
-    .then(
-      otp_form.addEventListener("input", () => {
-        if (email_input.value.length == 6) {
-          confirm_btn.disabled = false;
-        } else {
-          confirm_btn.disabled = true;
-        }
-      })
-    )
-    .then(() => {
-      var timeleft = 60;
-      var downloadTimer = setInterval(function () {
-        if (timeleft <= 0) {
-          clearInterval(downloadTimer);
-          document.getElementById("email_getcode").innerHTML = "Get Code";
-          phone_input.disabled = false;
-        } else {
-          phone_input.disabled = true;
-          document.getElementById("email_getcode").innerHTML = timeleft + "s";
-        }
-        timeleft -= 1;
-      }, 1000);
-    });
-}*/
 
 //OTP Get Code
+let otp_code = generateOtp(6);
 function otp_email_getcode() {
   alert(`Your OTP code is: ${otp_code}`);
   let popupotp = document.querySelector("#popupotp");
