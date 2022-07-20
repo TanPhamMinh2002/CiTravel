@@ -202,15 +202,16 @@ section{
 
     /*Message Pop UP*/
     .search-container #popup{
-      display: none;
+      visibility: hidden;
+      padding-top: .2rem;
+      padding-bottom: 1rem;
     }
       .search-container #popup.active{
+        visibility: visible;
         display: block;
         color:#CF1607;
         font-size: 12px;
         font-weight: 600;
-        margin-top: 1.2rem;
-        margin-bottom: 1rem;
         text-align: center;
       }
 
