@@ -114,8 +114,9 @@
     </section>
 
     <!--Secure Verification-->
+    <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
     <div class="otp">
-      <form action="#" id="otp_form">
+      <form action="" target="dummyframe" id="otp_form">
         <h2>Secure Verification</h2>
         <label for="email_input">Email verification code</label>
         <div class="email-otp input-container">
@@ -156,7 +157,6 @@
         <button
           class="btn"
           id="confirm_btn"
-          href="#"
           disabled="disabled"
           onclick="otpverification()"
         >
