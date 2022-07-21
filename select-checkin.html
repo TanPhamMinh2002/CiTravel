@@ -44,7 +44,46 @@
     <!--Page Title-->
     <h1 class="pagetitle">Online check in</h1>
 
+    <!--checkin selection-->
+    <section class="checkin_selection">
+      <h2 class="title">Select guest(s) to check in</h2>
+      <p class="label">Main Guest</p>
+      <button class="checkbox">
+        <p id="name">Tam Le</p>
+        <p id="status">Verified</p>
+      </button>
+      <p class="label">Additional Guest</p>
+
+      <button class="checkbox not_verified">
+        <div class="guest_info">
+          <p id="name">Nam Nguyen</p>
+          <p id="status">Not Verified</p>
+        </div>
+        <i class="fa-solid fa-circle-check"></i>
+      </button>
+
+      <button class="checkbox not_verified">
+        <div class="guest_info">
+          <p id="name">Lam Nguyen</p>
+          <p id="status">Not Verified</p>
+        </div>
+        <i class="fa-solid fa-circle-check"></i>
+      </button>
+
+      <div class="select_all">
+        <span>&nbsp;</span
+        ><a>Select all &nbsp;<i class="fa-solid fa-circle-check"></i></a>
+      </div>
+    </section>
+
+    <!--Button-->
+    <section>
+      <a href="select-checkin.html"
+        ><button class="checkin_btn">Check in online</button></a
+      >
+    </section>
+
     <!-- custome js file link -->
-    <script src="select-checkin.js"></script>
+    <script src="checkin.js"></script>
   </body>
 </html>

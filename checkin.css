@@ -125,14 +125,17 @@ header{
     grid-template-columns: repeat(2,auto);
     grid-gap:4px;
   }
-  header .language img{
-    height: 17.86px;
-    width: 25px;
-    border-radius: 4px;
-  }
-  header .language i{
-    color:#fff;
-  }
+    header .language.active{
+      display: none;
+    }
+    header .language img{
+      height: 17.86px;
+      width: 25px;
+      border-radius: 4px;
+    }
+    header .language i{
+      color:#fff;
+    }
 
 .pagetitle{
   color: #333;
@@ -213,3 +216,80 @@ section{
   font-size: 14px;
   font-weight: 600;
 }
+
+/*Checkin Selection*/
+.checkin_selection .title{
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 4%;
+}
+.checkin_selection .label{
+  font-size: 12px;
+  font-weight: 400;
+  color: #484848;
+  padding-bottom: 2%;
+}
+.checkin_selection .checkbox{
+  height: 48px;
+  width: 100%;
+  border: 0.5px solid #1660CF;
+  border-radius: 1.09707px;
+  text-align: start;
+  padding-left: 3.4%;
+  margin-bottom: 4%;
+}
+  .checkin_selection .checkbox #name{
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .checkin_selection .checkbox #status{
+    color: #00b517;
+    font-size: 12px;
+    font-weight: 500;
+  }
+.checkin_selection .not_verified{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+  align-items: center;
+  padding-right: .64rem;
+}
+  .checkin_selection .not_verified #status{
+    color:#f53838;
+  }
+  .checkin_selection .not_verified i{
+    font-size: 19.25px;
+    color: #1660CF;
+    visibility: hidden;
+  }
+  .checkin_selection .not_verified.active{
+    background: #00b517;
+  }
+  .checkin_selection .not_verified.active{
+    background: rgba(22, 96, 207, 0.14);
+  }
+    .checkin_selection .not_verified.active i{
+      visibility: visible;
+    }
+
+.select_all{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+  padding-right: .64rem;
+  color: #333;
+}
+  .select_all i{
+    font-size: 19.25px;
+  }
+  .select_all a{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  .select_all a.active{
+    color: #1660CF;
+  }
