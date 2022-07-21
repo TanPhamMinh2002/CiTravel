@@ -265,9 +265,6 @@ section{
     visibility: hidden;
   }
   .checkin_selection .not_verified.active{
-    background: #00b517;
-  }
-  .checkin_selection .not_verified.active{
     background: rgba(22, 96, 207, 0.14);
   }
     .checkin_selection .not_verified.active i{
@@ -283,6 +280,7 @@ section{
 }
   .select_all i{
     font-size: 19.25px;
+    display: none;
   }
   .select_all a{
     font-size: 14px;
@@ -292,4 +290,7 @@ section{
   }
   .select_all a.active{
     color: #1660CF;
+  }
+  .select_all a.active i{
+    display: inline;
   }

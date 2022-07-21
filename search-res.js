@@ -163,6 +163,7 @@ function otpverification() {
   if (email_input.value == otp_code || phone_input.value == otp_code) {
     document.getElementById("popupotp").innerText =
       "OTP Verification Successful!";
+    location.href = "checkin.html";
   } else {
     document.getElementById("popupotp").innerText =
       "OTP is invalid. Please try again!";
