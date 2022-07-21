@@ -35,27 +35,3 @@ menu.addEventListener("click", () => {
   logo.classList.toggle("active");
   language.classList.toggle("active");
 });
-
-//Select all
-let select_all = document.querySelector(".select_all a");
-let not_verified = document.querySelectorAll(".not_verified");
-select_all.addEventListener("click", () => {
-  select_all.classList.toggle("active");
-  [].forEach.call(not_verified, (el) => {
-    if (!el.classList.contains("active")) {
-      el.classList.add("active");
-    }
-  });
-  if (!select_all.classList.contains("active")) {
-    [].forEach.call(not_verified, (el) => {
-      el.classList.remove("active");
-    });
-  }
-});
-
-[].forEach.call(not_verified, (el) => {
-  el.addEventListener("click", () => {
-    el.classList.toggle("active");
-    select_all.classList.remove("active");
-  });
-});

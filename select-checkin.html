@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <div id="menu-bar" class="fas fa-person-walking-luggage"></div>
+      <div id="menu-bar" class="fas fa-bars"></div>
       <a href="index.html" class="logo">
         <img src="img/logo.jpg" />
         CiTravel
@@ -45,30 +45,32 @@
     <h1 class="pagetitle">Online check in</h1>
 
     <!--checkin selection-->
-    <section class="checkin_selection">
+    <section class="checkin_selection" id="checkinSelection">
       <h2 class="title">Select guest(s) to check in</h2>
       <p class="label">Main Guest</p>
       <button class="checkbox">
-        <p id="name">Tam Le</p>
-        <p id="status">Verified</p>
+        <p class="name" id="mainGuest">Tam Le</p>
+        <p class="status">Verified</p>
       </button>
       <p class="label">Additional Guest</p>
 
-      <button class="checkbox not_verified">
+      <!--<button class="checkbox not_verified">
         <div class="guest_info">
-          <p id="name">Nam Nguyen</p>
-          <p id="status">Not Verified</p>
+          <p class="name">Nam Nguyen</p>
+          <p class="status">Not Verified</p>
         </div>
         <i class="fa-solid fa-circle-check"></i>
       </button>
 
       <button class="checkbox not_verified">
         <div class="guest_info">
-          <p id="name">Lam Nguyen</p>
-          <p id="status">Not Verified</p>
+          <p class="name">Lam Nguyen</p>
+          <p class="status">Not Verified</p>
         </div>
         <i class="fa-solid fa-circle-check"></i>
-      </button>
+      </button>-->
+
+      <a id="additionalGuest" type="button"></a>
 
       <div class="select_all">
         <span>&nbsp;</span
@@ -85,5 +87,7 @@
 
     <!-- custome js file link -->
     <script src="checkin.js"></script>
+    <!--Booking Confirmation-->
+    <script src="select-checkin.js"></script>
   </body>
 </html>
