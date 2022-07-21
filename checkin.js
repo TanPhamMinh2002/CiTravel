@@ -44,10 +44,13 @@ select_all.addEventListener("click", () => {
   [].forEach.call(not_verified, (el) => {
     if (!el.classList.contains("active")) {
       el.classList.add("active");
-    } else {
-      el.classList.remove("active");
     }
   });
+  if (!select_all.classList.contains("active")) {
+    [].forEach.call(not_verified, (el) => {
+      el.classList.remove("active");
+    });
+  }
 });
 
 [].forEach.call(not_verified, (el) => {
