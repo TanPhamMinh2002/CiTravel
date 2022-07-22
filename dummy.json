@@ -10,7 +10,7 @@
       "departure":"Sat, 14 Aug 2022",
       "nights":"4",
       "guestNum":4,
-      "guestCheckin":3,
+      "guestCheckin":1,
       "guest":[
         {
           "firstName":"Tan",
@@ -23,8 +23,8 @@
           "firstName":"Larry",
           "lastName":"Wheels",
           "mainGuest":false,
-          "checkin":true,
-          "checkinConfirmationCode":"1231234123"
+          "checkin":false,
+          "checkinConfirmationCode":""
         },
         {
           "firstName":"Yep",
@@ -37,8 +37,8 @@
           "firstName":"Chris",
           "lastName":"Bumpstead",
           "mainGuest":false,
-          "checkin":true,
-          "checkinConfirmationCode":"1231234123"
+          "checkin":false,
+          "checkinConfirmationCode":""
         }
       ]
     },{

@@ -54,6 +54,7 @@ function guestCheckin() {
             btnMain.classList.toggle("active");
             select_all.classList.remove("active");
           });
+          btnList.push(btnMain);
         } else {
           let btn = document.createElement("button");
           btn.classList.add("checkbox");

@@ -274,7 +274,9 @@ section{
     font-size: 12px;
     font-weight: 500;
   }
-  .checkin_selection .verified i{
+  .checkin_selection i{
+    font-size: 19.25px;
+    color: #1660CF;
     visibility: hidden;
   }
   .checkin_selection .checkbox.not_verified .status{
@@ -289,11 +291,6 @@ section{
 
   .checkin_selection #additionalGuest .not_verified .status{
     color:#f53838;
-  }
-  .checkin_selection #additionalGuest .not_verified i{
-    font-size: 19.25px;
-    color: #1660CF;
-    visibility: hidden;
   }
   .checkin_selection #additionalGuest .not_verified.active{
     background: rgba(22, 96, 207, 0.14);
