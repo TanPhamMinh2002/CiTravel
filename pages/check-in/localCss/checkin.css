@@ -321,4 +321,5 @@ section{
   }
   .select_all a.active i{
     display: inline;
+    visibility: visible; 
   }

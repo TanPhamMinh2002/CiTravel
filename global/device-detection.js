@@ -11,6 +11,6 @@
   else document.write(b);
 })(
   navigator.userAgent || navigator.vendor || window.opera,
-  '<link rel="stylesheet" href="style.css" />',
-  '<link rel="stylesheet" href="mobile-style.css" />'
+  '<link rel="stylesheet" href="localCss/style.css" />',
+  '<link rel="stylesheet" href="localCss/mobile-style.css" />'
 );

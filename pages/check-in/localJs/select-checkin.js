@@ -28,7 +28,7 @@ select_all.addEventListener("click", () => {
   });
 });*/
 
-const url = "dummy.json";
+const url = "../../dummy.json";
 function guestCheckin() {
   fetch(url)
     .then((res) => res.json())

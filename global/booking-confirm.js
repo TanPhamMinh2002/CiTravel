@@ -1,5 +1,5 @@
 /*Fetch Dummy Data*/
-const url = "dummy.json";
+const url = "../../dummy.json";
 function getResData() {
   fetch(url)
     .then((res) => res.json())
@@ -137,7 +137,7 @@ function otpverification() {
   if (email_input.value == otp_code || phone_input.value == otp_code) {
     document.getElementById("popupotp").innerText =
       "OTP Verification Successful!";
-    location.href = "checkin.html";
+    location.href = "../check-in/checkin.html";
   } else {
     document.getElementById("popupotp").innerText =
       "OTP is invalid. Please try again!";
