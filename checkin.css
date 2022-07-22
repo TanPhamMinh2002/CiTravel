@@ -269,7 +269,12 @@ section{
     font-size: 12px;
     font-weight: 500;
   }
-
+  .checkin_selection .verified i{
+    display: none;
+  }
+  .checkin_selection .checkbox.not_verified .status{
+    color: #f53838;
+  }
 .checkin_selection #additionalGuest .not_verified{
   display: grid;
   grid-template-columns: repeat(2,auto);

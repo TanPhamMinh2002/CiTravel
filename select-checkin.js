@@ -38,9 +38,20 @@ function guestCheckin() {
           document.getElementById(
             "mainGuest"
           ).innerText = `${data[q].itinerary.confirmation[w].guest[i].firstName} ${data[q].itinerary.confirmation[w].guest[i].lastName}`;
+          let statusMain = document.querySelector("#mainBox .status");
+          let btnMain = document.querySelector("#mainBox");
+          statusMain.classList.add("status");
+          if (!data[q].itinerary.confirmation[w].guest[i].checkin) {
+            statusMain.innerText = "Not Verified";
+            btnMain.classList.add("not_verified");
+          } else {
+            statusMain.innerText = "Verified";
+            btnMain.classList.add("verified");
+          }
+          btnMain.appendChild(statusMain);
         } else {
           let btn = document.createElement("button");
-          btn.classList.add("checkbox", "not_verified");
+          btn.classList.add("checkbox");
           document.getElementById("additionalGuest").appendChild(btn);
           let div = document.createElement("div");
           div.classList.add("guest_info");
@@ -54,7 +65,13 @@ function guestCheckin() {
           div.appendChild(name);
           let status = document.createElement("p");
           status.classList.add("status");
-          status.innerText = "Not Verified";
+          if (!data[q].itinerary.confirmation[w].guest[i].checkin) {
+            status.innerText = "Not Verified";
+            btn.classList.add("not_verified");
+          } else {
+            status.innerText = "Verified";
+            btn.classList.add("verified");
+          }
           div.appendChild(status);
           btnList.push(btn);
           btn.addEventListener("click", () => {

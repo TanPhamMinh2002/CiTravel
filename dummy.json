@@ -44,27 +44,27 @@
     },{
       "number":"LMSGN12345",
       "propertyCode":"LMSGN",
-      "status":"Reserved",
+      "status":"Checkin",
       "roomNum":"2001",
       "arrival":"Wed, 08 Jun 2022",
       "departure":"Sat, 11 Jun 2022",
       "nights":"3",
       "guestNum":2,
-      "guestCheckin":0,
+      "guestCheckin":2,
       "guest":[
         {
           "firstName":"Devon",
           "lastName":"Larrat",
           "mainGuest":true,
-          "checkin":false,
-          "checkinConfirmationCode":""
+          "checkin":true,
+          "checkinConfirmationCode":"LMSGN12345001"
         },
         {
           "firstName":"Larry",
           "lastName":"Wheels",
           "mainGuest":false,
-          "checkin":false,
-          "checkinConfirmationCode":""
+          "checkin":true,
+          "checkinConfirmationCode":"LMSGN12345002"
         }
       ]
     },
@@ -90,7 +90,7 @@
           "firstName":"Habree",
           "lastName":"Larrat",
           "mainGuest":false,
-          "checkin":true,
+          "checkin":false,
           "checkinConfirmationCode":""
         },{
           "firstName":"Milo",
