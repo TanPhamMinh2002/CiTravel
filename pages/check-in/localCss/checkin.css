@@ -151,9 +151,6 @@ header{
 }
 
 /*Reservation*/
-section{ 
-  padding:.6rem 6%;
-}
 .title{
   display: flex;
   justify-content: space-between;

@@ -144,3 +144,7 @@ header{
   text-align: center;
   margin: 1.2rem;
 }
+
+section{ 
+  padding:.6rem 6%;
+}
