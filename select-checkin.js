@@ -40,6 +40,7 @@ function guestCheckin() {
           ).innerText = `${data[q].itinerary.confirmation[w].guest[i].firstName} ${data[q].itinerary.confirmation[w].guest[i].lastName}`;
           let statusMain = document.querySelector("#mainBox .status");
           let btnMain = document.querySelector("#mainBox");
+          let divMain = document.querySelector("#mainBox .guest_info");
           statusMain.classList.add("status");
           if (!data[q].itinerary.confirmation[w].guest[i].checkin) {
             statusMain.innerText = "Not Verified";
@@ -48,7 +49,11 @@ function guestCheckin() {
             statusMain.innerText = "Verified";
             btnMain.classList.add("verified");
           }
-          btnMain.appendChild(statusMain);
+          divMain.appendChild(statusMain);
+          btnMain.addEventListener("click", () => {
+            btnMain.classList.toggle("active");
+            select_all.classList.remove("active");
+          });
         } else {
           let btn = document.createElement("button");
           btn.classList.add("checkbox");

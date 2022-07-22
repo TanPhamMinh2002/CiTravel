@@ -258,6 +258,11 @@ section{
   text-align: start;
   padding-left: 3.4%;
   margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+  align-items: center;
+  padding-right: .64rem;
 }
   .checkin_selection .checkbox .name{
     color: #333;
@@ -270,18 +275,18 @@ section{
     font-weight: 500;
   }
   .checkin_selection .verified i{
-    display: none;
+    visibility: hidden;
   }
   .checkin_selection .checkbox.not_verified .status{
     color: #f53838;
   }
-.checkin_selection #additionalGuest .not_verified{
-  display: grid;
-  grid-template-columns: repeat(2,auto);
-  justify-content: space-between;
-  align-items: center;
-  padding-right: .64rem;
-}
+  .checkin_selection .checkbox.not_verified.active{
+    background: rgba(22, 96, 207, 0.14);
+  }
+    .checkin_selection .checkbox.not_verified.active i{
+      visibility: visible;
+    }
+
   .checkin_selection #additionalGuest .not_verified .status{
     color:#f53838;
   }
