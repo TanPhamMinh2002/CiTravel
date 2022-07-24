@@ -38,6 +38,9 @@ form input{
   border-radius: 8px;
   padding: 0 3.4%;
   margin-bottom: 3.4%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }
   form input::placeholder{
     font-size: 14px;
@@ -62,7 +65,7 @@ form input{
     position: absolute;
     width: 16%;
   }
-form select{
+  form select{
   padding-left: 10%;
   height: 44px;
   width: 100%;
@@ -74,7 +77,18 @@ form select{
   font-size: 14px;
   font-weight: 600;
   color: #333;
-}
+  }
   form .phoneBox .phoneInput{
     margin-left: 21%;
   }
+  form .captureBox{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 4%;
+  }
+    form .captureBox input{
+      height: 84px;
+      font-size: 1.4rem;
+      text-align: right;
+      padding-top: 24%;
+    }
