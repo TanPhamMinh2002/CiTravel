@@ -60,6 +60,7 @@ document
       reader.addEventListener("load", function () {
         frontImg.setAttribute("src", this.result);
       });
+
       reader.readAsDataURL(file);
     } else {
       frontId.style.display = "initial";
@@ -104,3 +105,8 @@ document.getElementById("documentType").addEventListener("change", () => {
     document.getElementById("idSubmission2").required = false;
   }
 });
+/*Tesseract.recognize("../../img/CMND.jpg", "eng", {
+  logger: (m) => console.log(m),
+}).then(({ data: { text } }) => {
+  console.log(text);
+});*/
