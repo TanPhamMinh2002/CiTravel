@@ -15,6 +15,7 @@
         {
           "firstName":"Tan",
           "lastName":"Larrat",
+          "email":"tanphamminh2002@gmail.com",
           "mainGuest":true,
           "checkin":false,
           "checkinConfirmationCode":""
@@ -22,6 +23,7 @@
         {
           "firstName":"Larry",
           "lastName":"Wheels",
+          "email":"larrywheels@gmail.com",
           "mainGuest":false,
           "checkin":false,
           "checkinConfirmationCode":""
@@ -29,6 +31,7 @@
         {
           "firstName":"Yep",
           "lastName":"Buddy",
+          "email":"lightweight@gmail.com",
           "mainGuest":false,
           "checkin":true,
           "checkinConfirmationCode":"1231234123"
@@ -36,6 +39,7 @@
         {
           "firstName":"Chris",
           "lastName":"Bumpstead",
+          "email":"cbum@gmail.com",
           "mainGuest":false,
           "checkin":false,
           "checkinConfirmationCode":""
@@ -55,13 +59,15 @@
         {
           "firstName":"Devon",
           "lastName":"Larrat",
+          "email":"nolimit@gmail.com",
           "mainGuest":true,
           "checkin":true,
           "checkinConfirmationCode":"LMSGN12345001"
         },
         {
-          "firstName":"Larry",
-          "lastName":"Wheels",
+          "firstName":"Elon",
+          "lastName":"Musk",
+          "email":"elonmusk@gmail.com",
           "mainGuest":false,
           "checkin":true,
           "checkinConfirmationCode":"LMSGN12345002"
@@ -82,6 +88,7 @@
         {
           "firstName":"Auden",
           "lastName":"Larrat",
+          "email":"auden@gmail.com",
           "mainGuest":true,
           "checkin":true,
           "checkinConfirmationCode":"LMSGN12346001"
@@ -89,12 +96,14 @@
         {
           "firstName":"Habree",
           "lastName":"Larrat",
+          "email":"habree@gmail.com",
           "mainGuest":false,
           "checkin":false,
           "checkinConfirmationCode":""
         },{
           "firstName":"Milo",
           "lastName":"Larrat",
+          "email":"milo@gmail.com",
           "mainGuest":false,
           "checkin":true,
           "checkinConfirmationCode":"LMSGN12346003"
@@ -107,17 +116,18 @@
     "confirmation":[{
       "number":"LMHP12347",
       "propertyCode":"LMHP",
-      "status":"Inhouse",
+      "status":"Reserved",
       "roomNum":"4000",
       "arrival":"Mon, 20 July 2022",
       "departure":"Fri, 24 July 2022",
       "nights":"4",
       "guestNum":3,
-      "guestCheckin":3,
+      "guestCheckin":2,
       "guest":[
         {
           "firstName":"Alan",
           "lastName":"Watts",
+          "email":"alan@gmail.com",
           "mainGuest":true,
           "checkin":true,
           "checkinConfirmationCode":"LMHP12347004"
@@ -125,21 +135,23 @@
         {
           "firstName":"Terence",
           "lastName":"Mckenna",
+          "email":"mckenna@gmail.com",
           "mainGuest":false,
-          "checkin":false,
+          "checkin":true,
           "checkinConfirmationCode":"LMHP12347005"
         },
         {
           "firstName":"Christopher",
           "lastName":"Bache",
+          "email":"bache@gmail.com",
           "mainGuest":false,
-          "checkin":true,
-          "checkinConfirmationCode":"LMHP12347006"
+          "checkin":false,
+          "checkinConfirmationCode":""
         }
       ]
     },
     {
-      "number":"LMSGN12347",
+      "number":"LMSGN12348",
       "propertyCode":"LMSGN",
       "status":"Checkout",
       "roomNum":"4004",
@@ -152,16 +164,18 @@
         {
           "firstName":"Anne",
           "lastName":"Watts",
+          "email":"anne@gmail.com",
           "mainGuest":true,
           "checkin":true,
-          "checkinConfirmationCode":"LMSGN12347007"
+          "checkinConfirmationCode":"LMSGN12348007"
         },
         {
           "firstName":"Klea",
           "lastName":"Mckenna",
+          "email":"klea@gmail.com",
           "mainGuest":false,
           "checkin":true,
-          "checkinConfirmationCode":"LMSGN12347008"
+          "checkinConfirmationCode":"LMSGN12348008"
         }
       ]
     }]

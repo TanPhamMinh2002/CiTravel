@@ -43,7 +43,8 @@ function bookinginfo() {
         data[q].itinerary.confirmation[w].guestCheckin ==
         data[q].itinerary.confirmation[w].guestNum
       ) {
-        document.getElementById("checkin").innerText = "Already Checked In";
+        document.getElementById("checkin").innerText =
+          "Already checked in. Please scan the provided QR Code via email.";
         btn_checkin.disabled = true;
       }
       if (
@@ -58,6 +59,9 @@ function bookinginfo() {
       //console.log(data[q].itinerary.confirmation[w].arrival);
       //console.log(`${q} ${w} ${e}`);
       //console.log(typeof data[q].itinerary.confirmation[w].status);
+    })
+    .catch((error) => {
+      console.error(error);
     });
 }
 bookinginfo();

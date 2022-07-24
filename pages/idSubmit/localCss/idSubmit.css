@@ -47,16 +47,6 @@ form input{
     form input:disabled::placeholder{
       color: rgba(9, 16, 29, 0.5);;
     }
-  form input[type=time]{
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-  }
-    form input[type=time]::-webkit-datetime-edit-ampm-field{
-      font-size: 14px;
-      font-weight: 600;
-      color: #333;
-    }
   form label{
     font-size: 12px;
     font-weight: 400;
@@ -68,3 +58,23 @@ form input{
       font-size: 14px;
       font-weight: 500;
     }
+  form .phoneBox .codeInput{
+    position: absolute;
+    width: 16%;
+  }
+form select{
+  padding-left: 10%;
+  height: 44px;
+  width: 100%;
+  background: #F4F6F9;
+  border: 0.5px solid #B2BCCA;
+  border-radius: 8px;
+  padding: 0 3.4%;
+  margin-bottom: 3.4%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+  form .phoneBox .phoneInput{
+    margin-left: 21%;
+  }

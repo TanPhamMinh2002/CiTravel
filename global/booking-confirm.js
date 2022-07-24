@@ -21,12 +21,23 @@ function getResData() {
                 name_input ==
                 data[i].itinerary.confirmation[j].guest[z].firstName
               ) {
-                sessionStorage.setItem("q", i);
-                sessionStorage.setItem("w", j);
-                sessionStorage.setItem("e", z);
-                let otp = document.querySelector(".otp");
-                otp.classList.toggle("active");
                 verified_firstname = true;
+                if (
+                  data[i].itinerary.confirmation[j].guestCheckin ==
+                  data[i].itinerary.confirmation[j].guestNum
+                ) {
+                  popup.classList.add("active");
+                  document.getElementById("popup").innerHTML =
+                    "Already checked in" +
+                    `.<br />` +
+                    "Please scan the provided QR code via email.";
+                } else {
+                  sessionStorage.setItem("q", i);
+                  sessionStorage.setItem("w", j);
+                  sessionStorage.setItem("e", z);
+                  let otp = document.querySelector(".otp");
+                  otp.classList.toggle("active");
+                }
               }
             }
           }
@@ -73,8 +84,10 @@ function otp_email_getcode() {
   alert(`Your OTP code is: ${otp_code}`);
   let popupotp = document.querySelector("#popupotp");
   popupotp.classList.toggle("active");
-  document.getElementById("popupotp").innerText =
-    "OTP has been sent to your email address. Please check your email box, even in Spam";
+  document.getElementById("popupotp").innerHTML =
+    "OTP has been sent to your email address." +
+    "<br/>" +
+    "Please check your email box, even in Spam";
   otp_form.addEventListener("input", () => {
     if (email_input.value.length == 6) {
       confirm_btn.disabled = false;

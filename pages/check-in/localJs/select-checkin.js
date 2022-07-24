@@ -2,7 +2,7 @@
 var q = parseInt(sessionStorage.getItem("q"));
 var w = parseInt(sessionStorage.getItem("w"));
 var e = parseInt(sessionStorage.getItem("e"));
-const btnList = [];
+var btnList = [];
 
 //Select all
 let select_all = document.querySelector(".select_all a");
