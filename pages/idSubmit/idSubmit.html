@@ -48,9 +48,10 @@
     <section>
       <div class="formTitle">
         <h2>Additional Guest 1</h2>
-        <p>Step 2 of 3</p>
+        <p id="steps">Step 2 of 3</p>
       </div>
-      <form action="">
+
+      <form onsubmit="continueCheckin()">
         <label for="firstName">First Name <span>*</span></label>
         <input
           type="text"
@@ -98,7 +99,7 @@
           </div>
           <div class="phoneInput">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" required />
+            <input type="tel" id="phone" />
           </div>
         </div>
         <label for="documentType">Document Type <span>*</span></label>
@@ -120,6 +121,7 @@
               capture="user"
               accept="image/*"
               style="display: none"
+              required
             />
             <input
               type="button"
@@ -136,6 +138,7 @@
               capture="user"
               accept="image/*"
               style="display: none"
+              required
             />
             <input
               type="button"

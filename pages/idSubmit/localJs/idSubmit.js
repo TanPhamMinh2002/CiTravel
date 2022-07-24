@@ -1,9 +1,29 @@
 var q = parseInt(sessionStorage.getItem("q"));
 var w = parseInt(sessionStorage.getItem("w"));
-var e = parseInt(sessionStorage.getItem("e"));
-/*document.getElementById("documentType").addEventListener("click", () => {
-  console.log(document.getElementById("documentType").value);
-});*/
+var totalCheckin = parseInt(sessionStorage.getItem("totalCheckin"));
+var stepCount = parseInt(sessionStorage.getItem("stepCount")) + 1;
+var guestIndex = parseInt(sessionStorage.getItem("guestIndex"));
+document.getElementById("steps").innerText = `Step ${stepCount} of ${
+  totalCheckin + 1
+}`;
+
+var checkinList = JSON.parse(sessionStorage.getItem("checkinList"));
+var e = checkinList[guestIndex];
+console.log(totalCheckin);
+console.log(guestIndex);
+
+/**Continue check in */
+function continueCheckin() {
+  if (guestIndex < totalCheckin - 1) {
+    guestIndex += 1;
+    stepCount += 1;
+    sessionStorage.setItem("guestIndex", guestIndex);
+    sessionStorage.setItem("stepCount", stepCount);
+    location.reload();
+  } else {
+    alert("Check in Successful");
+  }
+}
 
 //Arrival Date
 const url = "../../dummy.json";

@@ -21,6 +21,8 @@ select_all.addEventListener("click", () => {
     });
   }
 });
+var checkinList = [];
+var guestIndex = 0;
 function getGuest() {
   fetch(url)
     .then((res) => res.json())
@@ -32,9 +34,12 @@ function getGuest() {
           !data[q].itinerary.confirmation[w].guest[i].checkin
         ) {
           count += 1;
+          checkinList.push(i);
         }
       }
-      alert(count);
+      sessionStorage.setItem("totalCheckin", count);
+      sessionStorage.setItem("checkinList", JSON.stringify(checkinList));
+      sessionStorage.setItem("guestIndex", guestIndex);
     })
     .catch((error) => {
       console.error(error);
