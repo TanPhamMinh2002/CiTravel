@@ -43,8 +43,8 @@ document
       });
       reader.readAsDataURL(file);
     } else {
-      frontId.style.display = null;
-      frontImg.style.display = null;
+      frontId.style.display = "initial";
+      frontImg.style.display = "none";
     }
   });
 frontImg.addEventListener("click", function () {
@@ -66,11 +66,18 @@ document
       });
       reader.readAsDataURL(file);
     } else {
-      backId.style.display = null;
-      backImg.style.display = null;
+      backId.style.display = "initial";
+      backImg.style.display = "none";
     }
   });
 backImg.addEventListener("click", function () {
   backId.style.display = "initial";
   backImg.style.display = "none";
+});
+document.getElementById("documentType").addEventListener("click", () => {
+  if (document.getElementById("documentType").value == "Identification") {
+    document.getElementById("preview2").style.display = "initial";
+  } else {
+    document.getElementById("preview2").style.display = "none";
+  }
 });
