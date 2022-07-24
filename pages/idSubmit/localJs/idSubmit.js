@@ -94,7 +94,7 @@ backImg.addEventListener("click", function () {
   backId.style.display = "initial";
   backImg.style.display = "none";
 });
-document.getElementById("documentType").addEventListener("click", () => {
+document.getElementById("documentType").addEventListener("change", () => {
   if (document.getElementById("documentType").value == "Identification") {
     document.getElementById("preview2").style.display = "initial";
     document.getElementById("idSubmission2").required = true;
