@@ -111,27 +111,39 @@
         <input type="text" id="documentNum" required />
 
         <label for="idSubmission">Verify Information <span>*</span></label>
-        <input
-          type="file"
-          id="idSubmission"
-          capture="user"
-          accept="image/*"
-          style="display: none"
-        />
-        <div class="captureBox">
-          <input
-            type="button"
-            id="loadId"
-            value="📷"
-            onclick="document.getElementById('idSubmission').click();"
-          />
-
-          <input
-            type="button"
-            id="loadId"
-            value="📷"
-            onclick="document.getElementById('idSubmission').click();"
-          />
+        <div id="captureBox">
+          <div id="preview1">
+            <img src="" id="frontImg" style="display: none" />
+            <input
+              type="file"
+              id="idSubmission1"
+              capture="user"
+              accept="image/*"
+              style="display: none"
+            />
+            <input
+              type="button"
+              id="frontId"
+              value="📷"
+              onclick="document.getElementById('idSubmission1').click();"
+            />
+          </div>
+          <div id="preview2">
+            <img src="" id="backImg" style="display: none" />
+            <input
+              type="file"
+              id="idSubmission2"
+              capture="user"
+              accept="image/*"
+              style="display: none"
+            />
+            <input
+              type="button"
+              id="backId"
+              value="📷"
+              onclick="document.getElementById('idSubmission2').click();"
+            />
+          </div>
         </div>
         <label for="dob">Date of Birth</label>
         <input type="date" name="dob" id="dob" />

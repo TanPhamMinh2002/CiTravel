@@ -23,3 +23,54 @@ function arrivalDate() {
     });
 }
 arrivalDate();
+
+/**Preview image upload */
+const frontImg = document.getElementById("frontImg");
+const backImg = document.getElementById("backImg");
+const frontId = document.getElementById("frontId");
+const backId = document.getElementById("backId");
+document
+  .getElementById("idSubmission1")
+  .addEventListener("change", function () {
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      frontId.style.display = "none";
+      frontImg.style.display = "initial";
+
+      reader.addEventListener("load", function () {
+        frontImg.setAttribute("src", this.result);
+      });
+      reader.readAsDataURL(file);
+    } else {
+      frontId.style.display = null;
+      frontImg.style.display = null;
+    }
+  });
+frontImg.addEventListener("click", function () {
+  frontId.style.display = "initial";
+  frontImg.style.display = "none";
+});
+
+document
+  .getElementById("idSubmission2")
+  .addEventListener("change", function () {
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      backId.style.display = "none";
+      backImg.style.display = "initial";
+
+      reader.addEventListener("load", function () {
+        backImg.setAttribute("src", this.result);
+      });
+      reader.readAsDataURL(file);
+    } else {
+      backId.style.display = null;
+      backImg.style.display = null;
+    }
+  });
+backImg.addEventListener("click", function () {
+  backId.style.display = "initial";
+  backImg.style.display = "none";
+});

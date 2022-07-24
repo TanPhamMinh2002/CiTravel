@@ -81,14 +81,21 @@ form input{
   form .phoneBox .phoneInput{
     margin-left: 21%;
   }
-  form .captureBox{
+  form #captureBox{
     display: grid;
-    grid-template-columns: repeat(2,auto);
     grid-gap: 4%;
   }
-    form .captureBox input{
+    form #captureBox #preview1,#preview2{
+      grid-row: 1;
+    }
+    form #captureBox #preview1 img,#preview2 img{
+      height: 84px;
+      width: 100%;
+      object-fit: cover;
+    }
+    form #captureBox input{
       height: 84px;
       font-size: 1.4rem;
       text-align: right;
-      padding-top: 24%;
+      padding-top: 2rem;
     }
