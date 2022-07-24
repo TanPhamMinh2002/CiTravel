@@ -61,9 +61,10 @@ form input{
       font-size: 14px;
       font-weight: 500;
     }
-  form .phoneBox .codeInput{
-    position: absolute;
-    width: 16%;
+  form .phoneBox{
+    display: grid;
+    grid-template-columns: 20% 76%;
+    grid-gap: 4%;
   }
   form select{
   padding-left: 10%;
@@ -78,9 +79,7 @@ form input{
   font-weight: 600;
   color: #333;
   }
-  form .phoneBox .phoneInput{
-    margin-left: 21%;
-  }
+
   form #captureBox{
     display: grid;
     grid-gap: 4%;
