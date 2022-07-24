@@ -97,7 +97,9 @@ backImg.addEventListener("click", function () {
 document.getElementById("documentType").addEventListener("click", () => {
   if (document.getElementById("documentType").value == "Identification") {
     document.getElementById("preview2").style.display = "initial";
+    document.getElementById("idSubmission2").required = true;
   } else {
     document.getElementById("preview2").style.display = "none";
+    document.getElementById("idSubmission2").required = false;
   }
 });
