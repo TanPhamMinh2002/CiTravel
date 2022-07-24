@@ -3,6 +3,7 @@ var q = parseInt(sessionStorage.getItem("q"));
 var w = parseInt(sessionStorage.getItem("w"));
 var e = parseInt(sessionStorage.getItem("e"));
 var btnList = [];
+const url = "../../dummy.json";
 
 //Select all
 let select_all = document.querySelector(".select_all a");
@@ -20,7 +21,25 @@ select_all.addEventListener("click", () => {
     });
   }
 });
-
+function getGuest() {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      let count = 0;
+      for (let i = 0; i < btnList.length; i++) {
+        if (
+          btnList[i].classList.contains("active") &&
+          !data[q].itinerary.confirmation[w].guest[i].checkin
+        ) {
+          count += 1;
+        }
+      }
+      alert(count);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
 /*[].forEach.call(btnList, (el) => {
   el.addEventListener("click", () => {
     el.classList.toggle("active");
@@ -28,7 +47,6 @@ select_all.addEventListener("click", () => {
   });
 });*/
 
-const url = "../../dummy.json";
 function guestCheckin() {
   fetch(url)
     .then((res) => res.json())
@@ -86,6 +104,9 @@ function guestCheckin() {
           });
         }
       }
+    })
+    .catch((error) => {
+      console.error(error);
     });
 }
 guestCheckin();
