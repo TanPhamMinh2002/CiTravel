@@ -16,7 +16,6 @@ console.log(guestIndex);
 function continueCheckin() {
   if (guestIndex < totalCheckin - 1) {
     guestIndex += 1;
-    stepCount += 1;
     sessionStorage.setItem("guestIndex", guestIndex);
     sessionStorage.setItem("stepCount", stepCount);
     location.reload();
