@@ -95,6 +95,8 @@ backImg.addEventListener("click", function () {
   backImg.style.display = "none";
 });
 document.getElementById("documentType").addEventListener("change", () => {
+  frontId.style.display = "initial";
+  frontImg.style.display = "none";
   if (document.getElementById("documentType").value == "Identification") {
     document.getElementById("preview2").style.display = "initial";
     document.getElementById("idSubmission2").required = true;
