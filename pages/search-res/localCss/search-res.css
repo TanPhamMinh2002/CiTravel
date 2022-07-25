@@ -251,7 +251,7 @@ section{
         margin-bottom: 1rem;
       }
 
-      .search-container .qr-search a{
+      .search-container .qr-search button i{
         color:#CF1607;
         font-size: 2.4rem;
       }

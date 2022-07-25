@@ -84,7 +84,16 @@
 
           <div class="qr-search">
             <p>Or Scan QrCode</p>
-            <a href="#"><i class="fa-solid fa-qrcode"></i></a>
+            <input
+              type="file"
+              id="scanQR"
+              capture="environment"
+              accept="image/*"
+              style="display: none"
+            />
+            <button onclick="document.getElementById('scanQR').click();">
+              <i class="fa-solid fa-qrcode"></i>
+            </button>
           </div>
         </form>
       </div>
