@@ -118,7 +118,7 @@ document.getElementById("documentType").addEventListener("change", () => {
     document.getElementById("idSubmission2").required = false;
   }
 });
-/*Tesseract.recognize("../../img/CMND.jpg", "eng", {
+/* Tesseract.recognize("../../img/CMND.jpg", "eng", {
   logger: (m) => console.log(m),
 }).then(({ data: { text } }) => {
   console.log(text);
