@@ -69,10 +69,11 @@
         <!--<input type="time" id="arrivalTime" min="14:00" max="23:59" required />-->
         <input
           data-clocklet="format: h:mm a"
-          placeholder="--:-- pm"
+          value="--:-- pm"
           id="arrivalTime"
           autocomplete="off"
-          onkeydown="return false"
+          onclick="value=''"
+          type="button"
           required
         />
 

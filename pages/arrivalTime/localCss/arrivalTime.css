@@ -66,6 +66,9 @@ form input{
   form input #arrivalTime{
     width: 100%;
   }
+    form input[type="button"]{
+      text-align: start;
+    }
   form label{
     font-size: 12px;
     font-weight: 400;
