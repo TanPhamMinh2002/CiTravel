@@ -123,3 +123,9 @@ document.getElementById("documentType").addEventListener("change", () => {
 }).then(({ data: { text } }) => {
   console.log(text);
 });*/
+
+document.getElementById("dob").addEventListener("change", () => {
+  console.log(document.getElementById("dob").value);
+  document.getElementById("dobDisplay").value =
+    document.getElementById("dob").value;
+});
