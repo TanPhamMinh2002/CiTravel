@@ -99,3 +99,9 @@ form input{
       text-align: right;
       padding-top: 2rem;
     }
+  form input[type="date"]{
+    width: 100%;
+  }
+    ::-webkit-calendar-picker-indicator{
+      width: 100%;
+    }
