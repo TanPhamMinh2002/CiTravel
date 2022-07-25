@@ -14,6 +14,13 @@
     <!--custom css-->
     <link rel="stylesheet" href="../../global/mobileNav.css" />
     <link rel="stylesheet" href="localCss/arrivalTime.css" />
+
+    <!--cloclet-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/clocklet@0.3.0/css/clocklet.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/clocklet@0.3.0"></script>
   </head>
   <body>
     <header>
@@ -59,8 +66,16 @@
           disabled="disabled"
         />
         <label for="arrivalTime">Arrival Time <span>*</span></label>
-        <input type="time" id="arrivalTime" min="14:00" max="23:59" required />
-        <input type="submit" class="btn" value="Continue" />
+        <!--<input type="time" id="arrivalTime" min="14:00" max="23:59" required />-->
+        <input
+          data-clocklet="format: h:mm a"
+          placeholder="--:-- pm"
+          id="arrivalTime"
+          autocomplete="off"
+          required
+        />
+
+        <input type="submit" class="btn" id="submitBtn" value="Continue" />
       </form>
     </section>
 

@@ -21,3 +21,21 @@ function arrivalDate() {
     });
 }
 arrivalDate();
+
+document
+  .getElementById("arrivalTime")
+  .addEventListener("input", function (event) {
+    console.log(this.value);
+    const [h, mBox] = this.value.split(":");
+    const [m, s] = mBox.split(" ");
+    console.log(`${h} and ${m} and ${s}`);
+    let btn = document.querySelector("#submitBtn");
+    if (h == 12 || h == 1 || s == "am") {
+      console.log("error");
+      btn.classList.add("active");
+      btn.value = "Please select after 2pm";
+    } else {
+      btn.classList.remove("active");
+      btn.value = "Continue";
+    }
+  });
