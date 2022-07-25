@@ -123,3 +123,7 @@ document.getElementById("documentType").addEventListener("change", () => {
 }).then(({ data: { text } }) => {
   console.log(text);
 });*/
+
+const datepicker = new TheDatepicker.Datepicker(document.getElementById("dob"));
+datepicker.render();
+datepicker.options.setInputFormat("Y-n-j");

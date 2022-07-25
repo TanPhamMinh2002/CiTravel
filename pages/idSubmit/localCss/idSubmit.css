@@ -108,3 +108,6 @@ form input{
     ::-webkit-calendar-picker-indicator{
       width: 100%;
     }
+body.the-datepicker-page .the-datepicker__main{
+  top: 0 !important;;
+}

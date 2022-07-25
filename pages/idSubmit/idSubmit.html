@@ -14,6 +14,7 @@
     <!--custom css-->
     <link rel="stylesheet" href="../../global/mobileNav.css" />
     <link rel="stylesheet" href="localCss/idSubmit.css" />
+    <link href="localCss/the-datepicker.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -155,14 +156,929 @@
         </div>
         <label for="dob">Date of Birth</label>
 
-        <input
+        <!--<input
           value="YYYY-MM-DD"
           class="textbox-n"
           type="button"
           onclick="(this.type='date')"
           onchange="(this.type='button')"
           id="dob"
-        />
+        />-->
+        <div class="dobBox">
+          <input type="text" id="dob" placeholder="YYYY-MM-DD" readonly />
+          <span class="the-datepicker__deselect" style="visibility: hidden"
+            ><a
+              class="the-datepicker__deselect-button"
+              href="#"
+              title="Deselect date"
+              >×</a
+            ></span
+          >
+          <div
+            class="the-datepicker__container the-datepicker__container--responsive"
+            data-credits="TheDatepicker - Pure JavaScript Datepicker by Slevomat.cz"
+            data-url="https://thedatepicker.github.io/thedatepicker/"
+          >
+            <div class="the-datepicker__main" style="display: none">
+              <div class="the-datepicker__header">
+                <div class="the-datepicker__top">
+                  <div class="the-datepicker__title">
+                    <span
+                      class="the-datepicker__title-content"
+                      style="display: none"
+                    ></span>
+                  </div>
+                  <div class="the-datepicker__control">
+                    <div class="the-datepicker__reset" style="display: none">
+                      <a
+                        class="the-datepicker__button"
+                        href="#"
+                        title="Reset calendar"
+                        aria-label="Reset calendar"
+                        >↺</a
+                      >
+                    </div>
+                    <div class="the-datepicker__close">
+                      <a
+                        class="the-datepicker__button"
+                        href="#"
+                        title="Close calendar"
+                        aria-label="Close calendar"
+                        >×</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="the-datepicker__navigation">
+                  <div class="the-datepicker__go the-datepicker__go-previous">
+                    <a
+                      class="the-datepicker__button"
+                      href="#"
+                      title="Go to previous month"
+                      aria-label="Go to previous month"
+                      style="visibility: visible"
+                      >&lt;</a
+                    >
+                  </div>
+                  <div class="the-datepicker__state">
+                    <div class="the-datepicker__month">
+                      <select
+                        class="the-datepicker__select"
+                        title="Month selection"
+                        aria-label="Month selection"
+                      >
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option></select
+                      ><span style="display: none">July</span>
+                    </div>
+                    <div class="the-datepicker__year">
+                      <a
+                        class="the-datepicker__button the-datepicker__year-button"
+                        href="#"
+                        title="Year selection"
+                        aria-label="Year selection"
+                        >2022</a
+                      ><span style="display: none">2022</span>
+                    </div>
+                  </div>
+                  <div class="the-datepicker__go the-datepicker__go-next">
+                    <a
+                      class="the-datepicker__button"
+                      href="#"
+                      title="Go to next month"
+                      aria-label="Go to next month"
+                      style="visibility: visible"
+                      >&gt;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="the-datepicker__body the-datepicker__body--swipeable">
+                <div class="the-datepicker__tables">
+                  <table class="the-datepicker__calendar the-datepicker__table">
+                    <thead class="the-datepicker__calendar-header">
+                      <tr>
+                        <th scope="col" class="the-datepicker__week-day">Mo</th>
+                        <th scope="col" class="the-datepicker__week-day">Tu</th>
+                        <th scope="col" class="the-datepicker__week-day">We</th>
+                        <th scope="col" class="the-datepicker__week-day">Th</th>
+                        <th scope="col" class="the-datepicker__week-day">Fr</th>
+                        <th
+                          scope="col"
+                          class="the-datepicker__week-day the-datepicker__week-day--weekend"
+                        >
+                          Sa
+                        </th>
+                        <th
+                          scope="col"
+                          class="the-datepicker__week-day the-datepicker__week-day--weekend"
+                        >
+                          Su
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="the-datepicker__calendar-body">
+                      <tr class="the-datepicker__row">
+                        <td data-date="2022-06-27" class="the-datepicker__cell">
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            style="visibility: hidden"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >27</span
+                            ></a
+                          >
+                        </td>
+                        <td data-date="2022-06-28" class="the-datepicker__cell">
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            style="visibility: hidden"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >28</span
+                            ></a
+                          >
+                        </td>
+                        <td data-date="2022-06-29" class="the-datepicker__cell">
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            style="visibility: hidden"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >29</span
+                            ></a
+                          >
+                        </td>
+                        <td data-date="2022-06-30" class="the-datepicker__cell">
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            style="visibility: hidden"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >30</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-01"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >1</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-02"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >2</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-03"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >3</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td
+                          data-date="2022-07-04"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >4</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-05"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >5</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-06"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >6</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-07"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >7</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-08"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >8</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-09"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >9</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-10"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >10</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td
+                          data-date="2022-07-11"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >11</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-12"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >12</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-13"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >13</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-14"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >14</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-15"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >15</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-16"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >16</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-17"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >17</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td
+                          data-date="2022-07-18"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >18</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-19"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >19</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-20"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >20</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-21"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >21</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-22"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >22</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-23"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >23</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-24"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--past the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >24</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td
+                          data-date="2022-07-25"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--today"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >25</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-26"
+                          class="the-datepicker__cell the-datepicker__day"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >26</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-27"
+                          class="the-datepicker__cell the-datepicker__day"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >27</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-28"
+                          class="the-datepicker__cell the-datepicker__day"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >28</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-29"
+                          class="the-datepicker__cell the-datepicker__day"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >29</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-30"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >30</span
+                            ></a
+                          >
+                        </td>
+                        <td
+                          data-date="2022-07-31"
+                          class="the-datepicker__cell the-datepicker__day the-datepicker__day--weekend"
+                        >
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            style="visibility: visible"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                              >31</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row" style="display: none">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__day--button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__day-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table
+                    class="the-datepicker__years the-datepicker__table"
+                    style="display: none"
+                  >
+                    <tbody class="the-datepicker__years-body">
+                      <tr class="the-datepicker__row">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr class="the-datepicker__row">
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            class="the-datepicker__button the-datepicker__year-cell-button"
+                            href="#"
+                            ><span
+                              class="the-datepicker__button-content the-datepicker__year-cell-content"
+                            ></span
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <label for="nationality">Nationality</label>
         <input
@@ -180,6 +1096,7 @@
     <!-- custome js file link -->
     <script src="../../global/mobileNav.js"></script>
     <script src="../../global/toggleLanguage.js"></script>
+    <script src="localJs/the-datepicker.js"></script>
     <script src="localJs/idSubmit.js"></script>
   </body>
 </html>
