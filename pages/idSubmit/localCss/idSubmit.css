@@ -102,6 +102,9 @@ form input{
   form input[type="date"]{
     width: 100%;
   }
+    #dob{
+      text-align: start;
+    }
     ::-webkit-calendar-picker-indicator{
       width: 100%;
     }
