@@ -26,7 +26,7 @@
   font-weight: 600;
   margin-top: 4%;
 }
-  .btn.active{
+  .btn:disabled{
     background: #828282;
   }
 form{

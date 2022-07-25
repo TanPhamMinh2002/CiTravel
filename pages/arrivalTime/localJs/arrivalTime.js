@@ -32,10 +32,10 @@ document
     let btn = document.querySelector("#submitBtn");
     if (h == 12 || h == 1 || s == "am") {
       console.log("error");
-      btn.classList.add("active");
+      btn.disabled = true;
       btn.value = "Please select after 2pm";
     } else {
-      btn.classList.remove("active");
+      btn.disabled = false;
       btn.value = "Continue";
     }
   });
