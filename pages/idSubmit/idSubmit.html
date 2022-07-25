@@ -154,20 +154,23 @@
           </div>
         </div>
         <label for="dob">Date of Birth</label>
+
         <input
-          type="button"
-          name="dobDisplay"
-          id="dobDisplay"
-          onclick="document.getElementById('dob').style.display = 'initial';
-          document.getElementById('dob').value=''"
+          placeholder="YYYY-MM-DD"
+          class="textbox-n"
+          type="text"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+          id="dob"
         />
-        <input type="date" name="dob" id="dob" placeholder="YYYY-MM-DD" />
 
         <label for="nationality">Nationality</label>
         <input
           type="text"
           name="nationality"
           id="nationality"
+          value="Viet Nam"
+          disabled="disabled"
           style="text-transform: capitalize"
         />
         <input type="submit" class="btn" value="Continue" />
