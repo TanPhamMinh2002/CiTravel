@@ -86,9 +86,10 @@ form input{
   }
     form #captureBox #preview1,#preview2{
       grid-row: 1;
+      
     }
     form #captureBox #preview1 img,#preview2 img{
-      height: 100px;
+      height: 84px;
       width: 100%;
       object-fit: cover;
     }

@@ -9,8 +9,6 @@ document.getElementById("steps").innerText = `Step ${stepCount} of ${
 
 var checkinList = JSON.parse(sessionStorage.getItem("checkinList"));
 var e = checkinList[guestIndex];
-console.log(totalCheckin);
-console.log(guestIndex);
 
 /**Continue check in */
 function continueCheckin() {
@@ -26,10 +24,25 @@ function continueCheckin() {
 
 //Arrival Date
 const url = "../../dummy.json";
+const totalAdditionGuest = parseInt(
+  sessionStorage.getItem("totalAdditionGuest")
+);
+var additionGuestCount = parseInt(sessionStorage.getItem("additionGuestCount"));
 function arrivalDate() {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
+      if (data[q].itinerary.confirmation[w].guest[e].mainGuest) {
+        document.getElementById("guestType").innerText = "Main Guest";
+      } else {
+        if (additionGuestCount < totalAdditionGuest) {
+          additionGuestCount += 1;
+          document.getElementById(
+            "guestType"
+          ).innerText = `Additional Guest ${additionGuestCount}`;
+          sessionStorage.setItem("additionGuestCount", additionGuestCount);
+        }
+      }
       document.getElementById("firstName").placeholder =
         data[q].itinerary.confirmation[w].guest[e].firstName;
       document.getElementById("lastName").placeholder =
