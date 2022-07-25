@@ -109,5 +109,6 @@ form input{
       width: 100%;
     }
 body.the-datepicker-page .the-datepicker__main{
-  top: 0 !important;;
+  top: 0 !important;
+  padding-top: 24vh;
 }
