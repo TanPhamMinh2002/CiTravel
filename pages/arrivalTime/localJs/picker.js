@@ -1011,6 +1011,9 @@
           if (newValue < min) {
             newValue += base;
           }
+          if (newValue > max) {
+            newValue = max;
+          }
         }
 
         item.textContent = options.translate(
@@ -1456,7 +1459,7 @@
 
           case "HH":
           case "H":
-            parsedDate.setHours(n > 14);
+            parsedDate.setHours(n);
             break;
 
           case "mm":
