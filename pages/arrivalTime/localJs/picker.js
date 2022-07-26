@@ -1014,12 +1014,7 @@
             newValue += base;
           }
           if (newValue > max) {
-            if (count < 4) {
-              newValue = max - 1;
-              count += 1;
-            } else {
-              newValue = max;
-            }
+            newValue = max;
           }
         }
 
