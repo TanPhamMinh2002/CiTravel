@@ -1456,7 +1456,7 @@
 
           case "HH":
           case "H":
-            parsedDate.setHours(n);
+            parsedDate.setHours(n > 14);
             break;
 
           case "mm":
