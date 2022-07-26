@@ -1000,6 +1000,8 @@
       data.list.innerHTML = "";
       data.current = current;
 
+      var count = 0;
+
       for (var i = 0; i < options.rows + 2; i += 1) {
         var item = document.createElement("li");
         var position = i - data.index;
@@ -1012,7 +1014,12 @@
             newValue += base;
           }
           if (newValue > max) {
-            newValue = max;
+            if (count < 2) {
+              newValue = max - 1;
+              count += 1;
+            } else {
+              newValue = max;
+            }
           }
         }
 
