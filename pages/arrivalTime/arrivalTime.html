@@ -10,12 +10,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <!--cloclet-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/clocklet@0.3.0/css/clocklet.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/clocklet@0.3.0"></script>
+    <!--PickerTime-->
+    <link href="localCss/picker.css" rel="stylesheet" />
+
     <!--custom css-->
     <link rel="stylesheet" href="../../global/mobileNav.css" />
     <link rel="stylesheet" href="localCss/arrivalTime.css" />
@@ -64,19 +61,22 @@
           disabled="disabled"
         />
         <label for="arrivalTime">Arrival Time <span>*</span></label>
-        <!--<input type="time" id="arrivalTime" min="14:00" max="23:59" required />-->
+        <!--<input type="time" id="arrivalTime" min="14:00" max="23:59" required />
         <input
           data-clocklet="format: hh:mm A"
           value="02:00 PM"
           id="arrivalTime"
           type="button"
           required
-        />
+        />-->
+
+        <input type="text" class="form-control js-time-picker" value="14:00" />
 
         <input type="submit" class="btn" id="submitBtn" value="Continue" />
       </form>
     </section>
-
+    <!--PickerTIme-->
+    <script src="localJs/picker.js"></script>
     <!-- custome js file link -->
     <script src="../../global/mobileNav.js"></script>
     <script src="../../global/toggleLanguage.js"></script>

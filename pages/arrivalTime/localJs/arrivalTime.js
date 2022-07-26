@@ -21,7 +21,7 @@ function arrivalDate() {
     });
 }
 arrivalDate();
-
+/**
 var first = 0;
 document.getElementById("arrivalTime").addEventListener("click", function () {
   if (first == 0) {
@@ -29,6 +29,7 @@ document.getElementById("arrivalTime").addEventListener("click", function () {
     first = 1;
   }
 });
+
 document.getElementById("arrivalTime").addEventListener("input", function () {
   console.log(this.value);
   const [h, mBox] = this.value.split(":");
@@ -43,4 +44,12 @@ document.getElementById("arrivalTime").addEventListener("input", function () {
     btn.disabled = false;
     btn.value = "Continue";
   }
+}); */
+new Picker(document.querySelector(".js-time-picker"), {
+  format: "HH:mm",
+  headers: true,
+  text: {
+    title: "Pick your arrival time",
+  },
+  hour: 14,
 });
