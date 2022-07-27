@@ -1,7 +1,7 @@
 var q = parseInt(sessionStorage.getItem("q"));
 var w = parseInt(sessionStorage.getItem("w"));
 var e = parseInt(sessionStorage.getItem("e"));
-const url = "../assets/dummy.json";
+const url = "assets/dummy.json";
 /*Check in info injection*/
 function bookinginfo() {
   fetch(url)

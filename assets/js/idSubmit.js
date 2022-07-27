@@ -6,7 +6,7 @@ var guestIndex = parseInt(sessionStorage.getItem("guestIndex"));
 document.getElementById("steps").innerText = `Step ${stepCount} of ${
   totalCheckin + 1
 }`;
-const url = "../../assets/dummy.json";
+const url = "assets/dummy.json";
 var checkinList = JSON.parse(sessionStorage.getItem("checkinList"));
 var e = checkinList[guestIndex];
 

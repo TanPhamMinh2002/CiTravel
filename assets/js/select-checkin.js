@@ -4,7 +4,7 @@ var w = parseInt(sessionStorage.getItem("w"));
 var e = parseInt(sessionStorage.getItem("e"));
 var btnList = [];
 
-const url = "../assets/dummy.json";
+const url = "assets/dummy.json";
 //Select all
 let select_all = document.querySelector(".select_all a");
 

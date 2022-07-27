@@ -8,7 +8,7 @@ document.getElementById("steps").innerText = `Step ${stepCount} of ${
 }`;
 sessionStorage.setItem("stepCount", stepCount);
 //Arrival Date
-const url = "../../assets/dummy.json";
+const url = "assets/dummy.json";
 function arrivalDate() {
   fetch(url)
     .then((res) => res.json())
