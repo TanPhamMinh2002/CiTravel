@@ -1,5 +1,5 @@
 /*Fetch Dummy Data*/
-const url = "../assets/dummy.json";
+const url = "assets/dummy.json";
 function getResData() {
   fetch(url)
     .then((res) => res.json())
