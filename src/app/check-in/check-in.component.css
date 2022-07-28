@@ -1,0 +1,96 @@
+.pagetitle{
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.2rem;
+}
+
+.img_title{
+  width: 100%;
+  height: 220px;
+}
+
+/*Reservation*/
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: .2rem;
+}
+  .title h2{
+    font-size: 18px;
+  }
+  .title p{
+    font-size: 12px;
+  }
+
+.location{
+  font-size: 12px;
+  font-weight: 400;
+  color:#333;
+  padding-left: 6%;
+  margin-bottom: .4rem;
+}
+
+.info{
+  display: grid;
+  color:#484848;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,3rem);
+  justify-content: space-between;
+}
+  .info h3{
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .info p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .info #bg-status{
+    width: 86.9px;
+    padding: 3.1695px 6.339px;
+    border-radius: 15.8475px;
+    text-align: center;
+  }
+  .info #status{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .info #bg-status.reserved{
+    background-color: rgba(39, 174, 96, 0.1);
+  }
+    .info #status.reserved{
+      color: #27ae60;
+    }
+  .info #bg-status.inhouse{
+    background-color: rgba(255, 215, 0, 0.1);
+  }
+    .info #status.inhouse{
+      color: rgb(224, 197, 18);
+    }
+  .info #bg-status.checkout{
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+    .info #status.checkout{
+      color: rgb(228, 59, 21);
+    }
+
+
+/*Button*/
+.checkin_btn{
+  width: 100%;
+  height: 48px;
+  background: #CF1607;
+  border-radius: 100px;
+  margin-top: -2%;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+  #checkin:disabled{
+    background: #ddd;
+  }

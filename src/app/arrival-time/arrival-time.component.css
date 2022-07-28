@@ -1,0 +1,93 @@
+.pagetitle{
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.2rem;
+}
+.formTitle{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+  padding-bottom: 4%;
+}
+  .formTitle h2{
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  }
+  .formTitle p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+  }
+/*Button*/
+#submitBtn{
+  width: 100%;
+  height: 48px;
+  background: #CF1607;
+  border-radius: 100px;
+  margin-top: -2%;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4%;
+}
+  #submitBtn:disabled{
+    background: #828282;
+  }
+form{
+  display: flex;
+  flex-direction: column;
+}
+form input{
+  height: 44px;
+  width: 100%;
+  background: #F4F6F9;
+  border: 0.5px solid #B2BCCA;
+  border-radius: 8px;
+  padding: 0 3.4%;
+  margin-bottom: 3.4%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+  form input::placeholder{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+    form input:disabled::placeholder{
+      color: rgba(9, 16, 29, 0.5);;
+    }
+  form input[type=time]{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+    form input[type=time]::-webkit-datetime-edit-ampm-field{
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+  form input #arrivalTime{
+    width: 100%;
+  }
+    form input[type="button"]{
+      text-align: start;
+    }
+  form label{
+    font-size: 12px;
+    font-weight: 400;
+    color: #828282;
+    padding-bottom: 2%;
+  }
+    form label span{
+      color: #CF1607;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+.clocklet-container{
+  left: 34vw !important;;
+}

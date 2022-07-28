@@ -1,0 +1,280 @@
+<!--Search Reservation-->
+<div class="search-bar lg-view">
+  <img src="assets/images/topimg.jpg" class="nav-img lg-view" />
+  <div class="content">
+    <h1>FIND</h1>
+    <div class="checkin">
+      <h3>Check in</h3>
+      <div class="underline"></div>
+    </div>
+  </div>
+  <div class="search-box">
+    <form action="">
+      <div class="bg-qr-search">
+        <div class="qr-search">
+          <h3>Scan <br />QrCode</h3>
+          <a href="#"><i class="fa-solid fa-qrcode"></i></a>
+        </div>
+      </div>
+      <div class="bg-reservation-input">
+        <div class="reservation-input">
+          <label for="reservation">Reservation</label>
+          <input
+            type="search"
+            id="reservation"
+            placeholder="Type your Itinerary or Confirmation"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="firstname-input">
+        <label for="firstname">First Name</label>
+        <input
+          type="username"
+          id="firstname"
+          placeholder="Type first name"
+          required
+        />
+      </div>
+
+      <div class="bg-search-btn">
+        <a class="btn" id="search-btn" onclick="getResData()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+    </form>
+    <pre id="popup"></pre>
+  </div>
+  <div class="otp"></div>
+</div>
+
+<!--welcome section-->
+<section class="welcome">
+  <h1>Welcome Tam Le,</h1>
+  <p>Stay connect, feel like home</p>
+  <div class="wel-container">
+    <a class="food" href="#">
+      <i class="fa-solid fa-utensils"></i>
+      Food & Beverage
+    </a>
+
+    <a class="service" href="#">
+      <i class="fa-solid fa-bell-concierge"></i>Services & Amenities
+    </a>
+    <a class="help" href="#">
+      <i class="fa-solid fa-question"></i>Help & Support
+    </a>
+    <a class="history" href="#">
+      <i class="fa-solid fa-clock-rotate-left"></i>History
+    </a>
+  </div>
+</section>
+
+<!--just for you-->
+<section class="for-u">
+  <div class="h1-container">
+    <div class="h1-foru-container">
+      <h1 class="lg-view">Just <br />For You</h1>
+      <h1 class="sm-view">Just For You</h1>
+      <div class="underline lg-view"></div>
+    </div>
+    <a class="lg-view" href="#">View all ></a>
+    <a class="sm-view" href="#"
+      >See all <i class="fa-solid fa-caret-right"></i
+    ></a>
+  </div>
+
+  <!--desktop posts-->
+  <div class="post-box lg-view">
+    <a class="post" href="#">
+      <img src="assets/images/1.jpg" alt="" />
+      <div class="content">
+        <h3>Well Furnished Apartment</h3>
+        <p>100 Dong Khoi, Ho Chi Minh</p>
+        <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+      </div>
+    </a>
+    <a class="post" href="#">
+      <img src="assets/images/2.jpg" alt="" />
+      <div class="content">
+        <h3>Blue Door Villa Modern</h3>
+        <p>Phu Quoc, Vietnam</p>
+        <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+      </div>
+    </a>
+
+    <a class="post" href="#">
+      <img src="assets/images/3.jpg" alt="" />
+      <div class="content">
+        <h3>Beach House Apartment</h3>
+        <p>Phu Quoc, Vietnam</p>
+        <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+      </div>
+    </a>
+
+    <a class="post" href="#">
+      <img src="assets/images/4.jpg" alt="" />
+      <div class="content">
+        <h3>Country Boys Hotel</h3>
+        <p>Nha Trang, Vietnam</p>
+        <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+      </div>
+    </a>
+
+    <a class="post" href="#">
+      <img src="assets/images/6.jpg" alt="" />
+      <div class="content">
+        <h3>Well Furnished Apartment</h3>
+        <p>Ha Noi, Vietnam</p>
+        <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+      </div>
+    </a>
+
+    <a class="post" href="#">
+      <img src="assets/images/5.jpg" alt="" />
+      <div class="content">
+        <h3>Large Family Flat on Rent</h3>
+        <p>Sai Gon, Vietnam</p>
+        <i class="fa-solid fa-bed"></i> 3 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bath"></i> 1 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-car"></i> 2 &nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-paw"></i> 0 &nbsp;&nbsp;&nbsp;
+      </div>
+    </a>
+  </div>
+
+  <!--mobile posts-->
+  <div class="post-box sm-view">
+    <a class="post" href="#">
+      <img src="assets/images/7.jpg" alt="" />
+      <div class="content">
+        <h3>50% Discount on birthday</h3>
+        <p>Apply for Food & Beverage, Spa and Private party</p>
+      </div>
+    </a>
+    <a class="post" href="#">
+      <img src="assets/images/8.jpg" alt="" />
+      <div class="content">
+        <h3>Free 30 minutes foot massage</h3>
+        <p>Apply for Sakura Spa</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--Special Offers-->
+<section class="special-offers lg-view">
+  <div class="h1-container">
+    <div class="h1-foru-container">
+      <h1>Special Offers <br />CiTravel</h1>
+      <div class="underline"></div>
+    </div>
+    <a href="#">View all ></a>
+  </div>
+
+  <div class="post-box">
+    <a class="post" href="#">
+      <img src="assets/images/9.jpg" alt="" />
+      <div class="content">
+        <h3>Luxirious holiday with ultimate experiences at Vinpearl Luxury</h3>
+      </div>
+    </a>
+    <a class="post" href="#">
+      <img src="assets/images/10.jpg" alt="" />
+      <div class="content">
+        <h3>Vinpearl Golf Stay & Play - 3N2D unlimited golf promotion</h3>
+      </div>
+    </a>
+    <a class="post" href="#">
+      <img src="assets/images/11.jpg" alt="" />
+      <div class="content">
+        <h3>Discover Tuesday - book CiTravel for more fun!</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--Services & Amenities-->
+<section class="amenities sm-view">
+  <div class="h1-container">
+    <div class="h1-foru-container">
+      <h1>Services & Amenities</h1>
+    </div>
+    <a href="#">See all <i class="fa-solid fa-caret-right"></i></a>
+  </div>
+
+  <div class="post-box">
+    <a class="post" href="#">
+      <img src="assets/images/12.jpg" alt="" />
+      <div class="content">
+        <h3>MOM Bistro</h3>
+        <p>Beef, Seafood</p>
+      </div>
+    </a>
+    <a class="post" href="#">
+      <img src="assets/images/13.jpg" alt="" />
+      <div class="content">
+        <h3>Pizza 4P's</h3>
+        <p>Pizza, Italian</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--Events-->
+<section class="events sm-view">
+  <div class="h1-container">
+    <div class="h1-foru-container">
+      <h1>Events</h1>
+    </div>
+    <a href="#">See all <i class="fa-solid fa-caret-right"></i></a>
+  </div>
+
+  <div class="post-box">
+    <a class="post" href="#">
+      <img src="assets/images/14.jpg" alt="" />
+      <div class="content">
+        <h3>International Firework Competition</h3>
+        <p>Firework show from 10 nations on 10/07 - 15/07</p>
+      </div>
+    </a>
+    <a class="post" href="#">
+      <img src="assets/images/15.jpg" alt="" />
+      <div class="content">
+        <h3>Mid Land Travel Festival</h3>
+        <p>Open 1/7 - 5/7. Road show every night. United culture</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--newsletter-->
+<div class="newsletter-box lg-view">
+  <div class="content">
+    <h3>NEWSLETTER</h3>
+    <p>Stay Up to Date</p>
+  </div>
+
+  <form action="">
+    <div class="email-input">
+      <input type="email" placeholder="Your Email..." required />
+      <input type="submit" value="✉" />
+    </div>
+  </form>
+</div>

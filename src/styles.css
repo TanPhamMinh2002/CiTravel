@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+body.the-datepicker-page .the-datepicker__main{
+  top: 0vh !important;
+  padding-top: 24vh !important;
+}

@@ -1,0 +1,30 @@
+<!--Page Title-->
+<h1 class="pagetitle">Online check in</h1>
+
+<section>
+  <div class="formTitle">
+    <h2>Select Arrival Time</h2>
+    <p id="steps">Step 1 of 3</p>
+  </div>
+  <form action="id-submit">
+    <label for="arrivalDate">Arrival Date</label>
+    <input
+      type="text"
+      id="arrivalDate"
+      placeholder="08 Jun 2022"
+      disabled="disabled"
+    />
+    <label for="arrivalTime">Arrival Time <span>*</span></label>
+    <!--<input type="time" id="arrivalTime" min="14:00" max="23:59" required />
+    <input type="text" class="form-control js-time-picker" value="14:00" />
+    <input
+      data-clocklet="format: hh:mm A"
+      value="02:00 PM"
+      id="arrivalTime"
+      type="button"
+      required
+    />-->
+
+    <input type="submit" class="btn" id="submitBtn" value="Continue" />
+  </form>
+</section>

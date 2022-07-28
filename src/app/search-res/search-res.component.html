@@ -1,0 +1,136 @@
+<!-- font awesome cdn link -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+/>
+<!--Page Title-->
+<div class="title">
+  <img src="assets/images/topimg.jpg" />
+  <div class="content">
+    <h2>Online check in</h2>
+    <p>
+      Enter the following information to locate and confirm your booking, and
+      start online check in
+    </p>
+  </div>
+</div>
+
+<!--Search Reservation-->
+<section class="search-container">
+  <h2>Search Reservation</h2>
+  <div class="search-input">
+    <form action="">
+      <label for="reservation">Reservation</label>
+      <div class="input-container">
+        <input
+          type="search"
+          id="reservation"
+          placeholder="Type your Itinerary or Confirmation"
+          required
+        />
+      </div>
+
+      <label for="firstname">First Name</label>
+      <div class="input-container">
+        <input
+          type="username"
+          id="firstname"
+          placeholder="Type first name"
+          required
+        />
+      </div>
+
+      <label for="arrivalDate">Arrival Date</label>
+      <div class="input-container">
+        <input
+          type="text"
+          id="arrivalDate"
+          placeholder="Type the arrival date"
+          required
+        />
+      </div>
+
+      <pre id="popup">&nbsp;</pre>
+
+      <!--Reservation Validation-->
+      <a class="btn" id="search-btn" onclick="getResData()">
+        <p>Search</p>
+      </a>
+
+      <div class="qr-search">
+        <p>Or Scan QrCode</p>
+        <input
+          type="file"
+          id="scanQR"
+          capture="environment"
+          accept="image/*"
+          style="display: none"
+        />
+        <button onclick="document.getElementById('scanQR').click();">
+          <i class="fa-solid fa-qrcode"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!--Just For You-->
+  <div class="justforu">
+    <div class="title">
+      <h2>Just For You</h2>
+      <a href="#">See All <i class="fa-solid fa-caret-right"></i></a>
+    </div>
+
+    <div class="post-box">
+      <a class="post" href="#">
+        <img src="assets/images/9.jpg" alt="" />
+        <div class="content">
+          <h3>Luxirious holiday with ultimate...</h3>
+        </div>
+      </a>
+      <a class="post" href="#">
+        <img src="assets/images/10.jpg" alt="" />
+        <div class="content">
+          <h3>Vinpearl Golf Stay & Play - 3N2D...</h3>
+        </div>
+      </a>
+      <a class="post" href="#">
+        <img src="assets/images/11.jpg" alt="" />
+        <div class="content">
+          <h3>Discover Tuesday - book CiTravel...</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--Secure Verification-->
+<iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
+<div class="otp">
+  <form action="" target="dummyframe" id="otp_form">
+    <h2>Secure Verification</h2>
+    <label for="email_input">Email verification code</label>
+    <div class="email-otp input-container">
+      <div class="input-box">
+        <input type="text" id="email_input" required />
+        <a
+          href="javascript:void(0)"
+          class="send"
+          id="email_getcode"
+          onclick="otp_email_getcode()"
+          >Get Code</a
+        >
+      </div>
+    </div>
+
+    <pre id="popupotp">&nbsp;<br/>&nbsp;</pre>
+
+    <button
+      class="btn"
+      id="confirm_btn"
+      disabled="disabled"
+      onclick="otpverification()"
+    >
+      <p>Confirm</p>
+    </button>
+  </form>
+</div>
