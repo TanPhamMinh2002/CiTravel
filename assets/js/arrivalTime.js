@@ -6,7 +6,7 @@ var stepCount = 1;
 document.getElementById("steps").innerText = `Step ${stepCount} of ${
   totalCheckin + 1
 }`;
-sessionStorage.setItem("stepCount", stepCount);
+sessionStorage.setItem("stepCount", stepCount + 1);
 //Arrival Date
 const url = "assets/dummy.json";
 function arrivalDate() {

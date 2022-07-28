@@ -102,43 +102,8 @@ function otp_email_getcode() {
     if (timeleft <= 0) {
       clearInterval(downloadTimer);
       document.getElementById("email_getcode").innerHTML = "Try Again";
-      phone_input.disabled = false;
-      phone_getcode.classList.remove("active");
     } else {
-      phone_input.disabled = true;
       document.getElementById("email_getcode").innerHTML = timeleft + "s";
-      phone_getcode.classList.add("active");
-    }
-    timeleft -= 1;
-  }, 1000);
-}
-
-//Phone OTP
-function otp_phone_getcode() {
-  alert(`Your OTP code is: ${otp_code}`);
-  let popupotp = document.querySelector("#popupotp");
-  popupotp.classList.toggle("active");
-  document.getElementById("popupotp").innerText =
-    "OTP has been sent to your mobile phone number. Please check your message";
-  otp_form.addEventListener("input", () => {
-    if (phone_input.value.length == 6) {
-      confirm_btn.disabled = false;
-    } else {
-      confirm_btn.disabled = true;
-    }
-  });
-  let email_getcode = document.querySelector("#email_getcode");
-  var timeleft = 60;
-  var downloadTimer = setInterval(function () {
-    if (timeleft <= 0) {
-      clearInterval(downloadTimer);
-      document.getElementById("phone_getcode").innerHTML = "Try Again";
-      email_input.disabled = false;
-      email_getcode.classList.remove("active");
-    } else {
-      email_input.disabled = true;
-      email_getcode.classList.add("active");
-      document.getElementById("phone_getcode").innerHTML = timeleft + "s";
     }
     timeleft -= 1;
   }, 1000);
