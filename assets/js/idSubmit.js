@@ -5542,8 +5542,10 @@ document.getElementById("documentType").addEventListener("change", () => {
   frontImg.style.display = "none";
   if (document.getElementById("documentType").value == "Identification") {
     document.getElementById("preview2").style.display = "initial";
+    document.getElementById("frontId").style.width = "42vw";
   } else {
     document.getElementById("preview2").style.display = "none";
+    document.getElementById("frontId").style.width = "100%";
   }
 });
 /*
