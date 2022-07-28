@@ -5607,6 +5607,11 @@ function cancelFront() {
   previewFront.classList.remove("active");
 }
 
+document.getElementById("frontImg").addEventListener("click", function () {
+  document.getElementById("frontId").style.display = "initial";
+  document.getElementById("frontImg").style.display = "none";
+});
+
 /**Back Capture */
 let backCanvas = document.querySelector("#backCanvas");
 let contextBack = backCanvas.getContext("2d");
@@ -5648,3 +5653,7 @@ function cancelBack() {
 
   previewBack.classList.remove("active");
 }
+document.getElementById("backImg").addEventListener("click", function () {
+  document.getElementById("backId").style.display = "initial";
+  document.getElementById("backImg").style.display = "none";
+});
