@@ -1,14 +1,9 @@
 
 /*Title*/
-.title{
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  top:0;
-}
+
 .title img{
-  position: fixed;
-  height: 200px;
+  position: absolute;
+  height: 184px;
   width:100%;
   object-position: 0 4%;
   top:4vh;
@@ -19,7 +14,7 @@
 
   /*Content title*/
   .title .content{
-    position: fixed;
+    position: absolute;
     text-align: center;
     color: #fff;
     top:14%;
