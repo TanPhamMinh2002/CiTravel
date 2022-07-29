@@ -1,11 +1,10 @@
 
 /*Title*/
 .title img{
-  height: 40vh;
+  height: 240px;
   width:100%;
   top:4vh;
   object-fit: cover;
-  object-position: 0 34%;
   filter: brightness(64%);
   position: absolute;
   z-index: -2;

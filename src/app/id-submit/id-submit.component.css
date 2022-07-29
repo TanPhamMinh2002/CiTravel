@@ -109,9 +109,9 @@ form input{
       padding-top: 2rem;
     }
 
-canvas{
-  width: 100vw;
-  height: 80vh;
+#frontCanvas{
+  width: 90vw;
+  height: 28vh;
 }
 .displayCamBtn{
   height: 84px;
