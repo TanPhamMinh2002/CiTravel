@@ -1,12 +1,15 @@
 
 /*Title*/
-
-.title img{
+.title{
   position: absolute;
-  height: 184px;
-  width:100%;
-  object-position: 0 4%;
-  top:4vh;
+  top: 8vh;
+  left: 0vw;
+}
+.title img{
+  position: relative;
+  height: 240px;
+  width:120%;
+  top:0vh;
   object-fit: cover;
   filter: brightness(64%);
   z-index: -77;
@@ -14,11 +17,11 @@
 
   /*Content title*/
   .title .content{
-    position: absolute;
+    position: relative;
     text-align: center;
     color: #fff;
-    top:14%;
-    z-index: -7;
+    top:-32vh;
+    z-index: -77;
   }
 
   .title .content h2{
