@@ -5637,6 +5637,7 @@ function backImgCapture() {
   document.getElementById("backId").style.display = "none";
   contextBack.drawImage(videoBack, 0, 0, backCanvas.width, backCanvas.height);
   let image_data_url = backCanvas.toDataURL("image/jpeg");
+
   document.getElementById("backImg").style.display = "initial";
   document.getElementById("backImg").setAttribute("src", image_data_url);
   // data url of the image
@@ -5644,6 +5645,28 @@ function backImgCapture() {
   videoBack.srcObject.getTracks().forEach(function (track) {
     track.stop();
   });
+
+  /**Fetch OCR
+  var urlImg = "https://ocr-hms-multiple.bigdataz.dev:8555/ocr/auto";
+
+  fetch(urlImg, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+    body: `{'images':[${image_data_url}]}`,
+    redirect: "follow",
+  })
+    .then((response) => {
+      if (response.status === 200) {
+        console.log(response.text());
+      } else {
+        throw new Error("Something went wrong on api server!");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });*/
 }
 
 function cancelBack() {
