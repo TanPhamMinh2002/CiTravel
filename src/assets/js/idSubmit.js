@@ -5575,9 +5575,6 @@ function displayFrontCam() {
         videoFront.srcObject = stream;
         videoFront.play();
       });
-  } else {
-    alert("Please Update or Use Different Browser");
-    return;
   }
 }
 
