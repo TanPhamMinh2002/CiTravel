@@ -88,8 +88,8 @@ form label{
       font-weight: 400;
     }
     form .emailForm .send .checkBox{
-      background: #1660CF;
-      border: 1px solid #1660CF;
+      background: #fff;
+      border: 1px solid #99A8BD;
       border-radius: 2px;
       width: 1.4rem;
       text-align: center;
