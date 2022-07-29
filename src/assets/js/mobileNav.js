@@ -21,7 +21,11 @@ function doSomething() {
   menu.classList.remove("active");
   navbar.classList.remove("active");
   logo.classList.remove("active");
-  language.classList.remove("active");
+  if (
+    !(link[link.length - 1] == "home" || link[link.length - 1] == "search-res")
+  ) {
+    language.classList.remove("active");
+  }
 }
 document.addEventListener("scroll", function (e) {
   lastKnownScrollPosition = window.scrollY;
