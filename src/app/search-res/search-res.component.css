@@ -1,22 +1,23 @@
 
 /*Title*/
 .title img{
-  height: 240px;
+  position: absolute;
+  height: 200px;
   width:100%;
+  object-position: 0 4%;
   top:4vh;
   object-fit: cover;
   filter: brightness(64%);
-  position: absolute;
-  z-index: -2;
+  z-index: -77;
 }
 
   /*Content title*/
   .title .content{
+    position: absolute;
     text-align: center;
     color: #fff;
-    position: absolute;
     top:14%;
-    z-index: -2;
+    z-index: -7;
   }
 
   .title .content h2{
@@ -52,6 +53,7 @@ section{
   border: 0.52825px solid #FFFFFF;
   border-radius: 20px 20px 0px 0px;
   margin-top:40%;
+  z-index: 0;
 }
 
   .search-container h2{
