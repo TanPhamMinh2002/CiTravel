@@ -1,9 +1,9 @@
 
 /*Title*/
 .title img{
-  height: 174px;
+  height: 200px;
   width:100%;
-  top:8vh;
+  top:4vh;
   object-fit: cover;
   object-position: 0 34%;
   filter: brightness(64%);
