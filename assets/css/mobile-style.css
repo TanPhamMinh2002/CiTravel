@@ -62,7 +62,7 @@ header{
     color: #fff;
     display: flex;
     align-items: center;
-    padding-right: 2%;
+    padding-left: 2%;
   }
     header .logo img{
       width: 2rem;
@@ -122,9 +122,31 @@ header{
             width: 2.8rem;
           }
   header .account_settings{
+
     font-size: 1.4rem;
     color: #fff;
+
   }
+  header .account_settings.active{
+    display: none;
+  }
+  header .language{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap:4px;
+  }
+    header .language.active{
+      display: none;
+    }
+    header .language img{
+      height: 17.86px;
+      width: 25px;
+      border-radius: 4px;
+    }
+    header .language i{
+      position: relative;
+      color:#fff;
+    }
 
 /*welcome section*/
 section{
