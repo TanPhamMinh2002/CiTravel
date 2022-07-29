@@ -12,7 +12,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all .2s linear; 
+  transition: all .2s linear;
 }
 
 html{
@@ -62,7 +62,7 @@ header{
     color: #fff;
     display: flex;
     align-items: center;
-    padding-right: 4%;
+    padding-right: 2%;
   }
     header .logo img{
       width: 2rem;
@@ -127,7 +127,7 @@ header{
   }
 
 /*welcome section*/
-section{ 
+section{
   padding:1.4rem 6%;
 }
 
@@ -164,7 +164,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding:4px; 
+  padding:4px;
 }
 
   .food i{
@@ -189,7 +189,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 4px; 
+  padding: 4px;
 }
 
   .service i{
@@ -214,7 +214,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 4px; 
+  padding: 4px;
 }
 
   .help i{
@@ -239,7 +239,7 @@ section{
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 4px; 
+  padding: 4px;
 }
 
   .history i{
@@ -257,7 +257,7 @@ section{
 
 /*Just For You*/
 .h1-container{
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10%;

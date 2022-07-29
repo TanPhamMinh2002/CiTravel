@@ -12,7 +12,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all .2s linear; 
+  transition: all .2s linear;
 }
 
 html{
@@ -145,6 +145,6 @@ header{
   margin: 1.2rem;
 }
 
-section{ 
+section{
   padding:.6rem 6%;
 }
