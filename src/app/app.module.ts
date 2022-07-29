@@ -8,6 +8,7 @@ import { CheckInComponent } from './check-in/check-in.component';
 import { ArrivalTimeComponent } from './arrival-time/arrival-time.component';
 import { IdSubmitComponent } from './id-submit/id-submit.component';
 import { SelectCheckinComponent } from './select-checkin/select-checkin.component';
+import { CheckinSuccessComponent } from './checkin-success/checkin-success.component';
 
 
 
@@ -20,6 +21,7 @@ import { SelectCheckinComponent } from './select-checkin/select-checkin.componen
     ArrivalTimeComponent,
     IdSubmitComponent,
     SelectCheckinComponent,
+    CheckinSuccessComponent,
   ],
   imports: [
     BrowserModule,

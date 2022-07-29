@@ -1,0 +1,101 @@
+.status{
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  text-align: center;
+  color: #333;
+  grid-gap: .64rem;
+}
+  .status .icon{
+    position: relative;
+    color:#00B517;
+    margin-top: 2.4vh;
+    font-size: 24px;
+    width: 11vw;
+    height: 6vh;
+    left: 44vw;
+    border: 2px solid #00B517;
+    border-radius: 40px;
+  }
+  .status .icon i{
+    position: relative;
+    top: .5vh;
+  }
+  .status h1{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .status p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 1rem;
+  }
+form{
+  padding: 2.4rem 1.4rem;
+}
+.qrDisplay{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: start;
+  grid-gap: 1.4rem;
+}
+  .qrDisplay img{
+    width: 100px;
+    height: 100px;
+  }
+  .qrDisplay h2{
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+form label{
+  color: #828282;
+  font-size: 12px;
+  font-weight: 400;
+}
+  form input{
+    height: 44px;
+    width: 100%;
+    background: #F4F6F9;
+    border: 0.5px solid #B2BCCA;
+    border-radius: 8px;
+    padding: 0 3.4%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  form .emailForm .inputEmail{
+    margin-top: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-gap: .4rem;
+  }
+
+  form .emailForm .send{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    margin-top: 1rem;
+    justify-content: start;
+    align-items: center;
+    grid-gap: .64rem;
+    position: relative;
+    left: .4vw;
+  }
+    form .emailForm .send p{
+      color: #333;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    form .emailForm .send .checkBox{
+      background: #1660CF;
+      border: 1px solid #1660CF;
+      border-radius: 2px;
+      width: 1.4rem;
+      text-align: center;
+      color: #fff;
+    }
+      form .emailForm .send .checkBox.active{
+        background: #1660CF;
+        border: 1px solid #1660CF;
+      }
