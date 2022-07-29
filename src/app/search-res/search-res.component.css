@@ -1,27 +1,22 @@
 
 /*Title*/
-.title{
-  position: absolute;
-  top: 8vh;
-  left: 0vw;
-  z-index: -777;
-}
 .title img{
-  position: relative;
+  position: absolute;
   height: 240px;
   width:100%;
-  top:0vh;
+  top:4%;
   object-fit: cover;
   filter: brightness(64%);
+  z-index: -7;
 }
 
   /*Content title*/
   .title .content{
-    position: relative;
+    position: absolute;
     text-align: center;
     color: #fff;
-    top:-30vh;
-
+    top:14%;
+    z-index: -7;
   }
 
   .title .content h2{
