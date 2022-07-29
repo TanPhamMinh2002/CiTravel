@@ -173,7 +173,7 @@ background-color: black;
   height: 28vh;
   width: 90vw;
   left: 5vw;
-  overflow: hidden;
+
 }
   .previewFront video{
     position: relative;
