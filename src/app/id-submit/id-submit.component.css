@@ -244,6 +244,7 @@ background-color: black;
   height: 28vh;
   width: 90vw;
   left: 5vw;
+  z-index: 777;
   overflow: hidden;
 }
   .previewBack video{
