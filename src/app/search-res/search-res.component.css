@@ -1,7 +1,13 @@
 
 /*Title*/
-.title img{
+.title{
   position: absolute;
+  height: 100vh;
+  width: 100%;
+  top:0;
+}
+.title img{
+  position: fixed;
   height: 200px;
   width:100%;
   object-position: 0 4%;
@@ -13,7 +19,7 @@
 
   /*Content title*/
   .title .content{
-    position: absolute;
+    position: fixed;
     text-align: center;
     color: #fff;
     top:14%;
@@ -141,9 +147,11 @@ section{
   margin-top: 2rem;
 }
   .justforu .title {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 1rem;
   }
   .justforu .title h2 {
     color:#333333;
