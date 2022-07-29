@@ -4,15 +4,15 @@
   position: absolute;
   top: 8vh;
   left: 0vw;
+  z-index: -777;
 }
 .title img{
   position: relative;
   height: 240px;
-  width:120%;
+  width:100%;
   top:0vh;
   object-fit: cover;
   filter: brightness(64%);
-  z-index: -77;
 }
 
   /*Content title*/
@@ -20,8 +20,8 @@
     position: relative;
     text-align: center;
     color: #fff;
-    top:-32vh;
-    z-index: -77;
+    top:-30vh;
+
   }
 
   .title .content h2{
