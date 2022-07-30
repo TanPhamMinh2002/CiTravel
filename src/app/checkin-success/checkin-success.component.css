@@ -2,23 +2,23 @@
   display: grid;
   grid-template-columns: repeat(1,auto);
   text-align: center;
-  color: #333;
-  grid-gap: .64rem;
+  color: #333333;
+  grid-gap: .84rem;
 }
   .status .icon{
     position: relative;
     color:#00B517;
-    margin-top: 2.4vh;
+    margin-top: 3.4vh;
     font-size: 24px;
-    width: 11vw;
-    height: 6vh;
+    width: 12.4vw;
+    height: 7vh;
     left: 44vw;
     border: 2px solid #00B517;
-    border-radius: 40px;
+    border-radius: 44px;
   }
   .status .icon i{
     position: relative;
-    top: .5vh;
+    top: 1vh;
   }
   .status h1{
     font-size: 20px;
@@ -72,7 +72,7 @@ form label{
     grid-gap: .4rem;
   }
 
-  form .emailForm .send{
+  form .emailForm #send{
     display: grid;
     grid-template-columns: repeat(2,auto);
     margin-top: 1rem;
@@ -82,12 +82,12 @@ form label{
     position: relative;
     left: .4vw;
   }
-    form .emailForm .send p{
+    form .emailForm #send p{
       color: #333;
       font-size: 14px;
       font-weight: 400;
     }
-    form .emailForm .send .checkBox{
+    form .emailForm #send .checkBox{
       background: #fff;
       border: 1px solid #99A8BD;
       border-radius: 2px;
@@ -95,7 +95,19 @@ form label{
       text-align: center;
       color: #fff;
     }
-      form .emailForm .send .checkBox.active{
+      form .emailForm #send.active .checkBox{
         background: #1660CF;
         border: 1px solid #1660CF;
       }
+/*Button*/
+#submitBtn{
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: #CF1607;
+  border-radius: 100px;
+  margin-top: 6vh;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 600;
+}
