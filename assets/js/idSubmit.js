@@ -5435,22 +5435,20 @@ const url = "assets/dummy.json";
 var checkinList = JSON.parse(sessionStorage.getItem("checkinList"));
 var e = checkinList[guestIndex];
 let isSubmit = false;
+
 function submitted() {
-  isSubmit = true;
-}
-/**Continue check in */
-function continueCheckin() {
-  if (guestIndex < totalCheckin - 1 && isSubmit) {
+  if (guestIndex < totalCheckin - 1) {
     guestIndex += 1;
     stepCount += 1;
     sessionStorage.setItem("guestIndex", guestIndex);
     sessionStorage.setItem("stepCount", stepCount);
     location.reload("id-submit");
-  } else if (isSubmit) {
-    alert("Check in Successful");
+  } else {
+    location.href = "checkin-success";
   }
 }
-
+/**Continue check in */
+function continueCheckin() {}
 //Arrival Date
 
 /*const totalAdditionGuest = parseInt(

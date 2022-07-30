@@ -2,7 +2,7 @@
   {"itinerary":{
     "number":"IT12345",
     "confirmation":[{
-      "number":"1234567890",
+      "number":"1234",
       "propertyCode":"LMHN",
       "status":"Reserved",
       "roomNum":"2004",
