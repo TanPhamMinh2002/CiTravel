@@ -26,6 +26,7 @@
           type="search"
           id="reservation"
           placeholder="Type your Itinerary or Confirmation"
+          autocomplete="off"
           required
         />
       </div>
@@ -46,6 +47,7 @@
           type="text"
           id="arrivalDate"
           placeholder="Type the arrival date"
+          autocomplete="off"
           required
         />
       </div>
@@ -66,12 +68,13 @@
           accept="image/*"
           style="display: none"
         />
-        <button onclick="document.getElementById('scanQR').click();">
-          <i class="fa-solid fa-qrcode"></i>
-        </button>
       </div>
     </form>
   </div>
+
+  <button class="qrScan" onclick="document.getElementById('scanQR').click();">
+    <i class="fa-solid fa-qrcode"></i>
+  </button>
 
   <!--Just For You-->
   <div class="justforu">

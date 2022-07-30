@@ -129,10 +129,15 @@ section{
         margin-bottom: 1rem;
       }
 
-      .search-container .qr-search button i{
-        color:#CF1607;
-        font-size: 2.4rem;
-      }
+
+.qrScan{
+  position: relative;
+  left: 39.4vw;
+}
+.qrScan i{
+  color:#CF1607;
+  font-size: 2.4rem;
+}
 
 /*Just For You*/
 .justforu {
