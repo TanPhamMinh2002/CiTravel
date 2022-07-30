@@ -41,8 +41,8 @@
           "lastName":"Bumpstead",
           "email":"cbum@gmail.com",
           "mainGuest":false,
-          "checkin":false,
-          "checkinConfirmationCode":""
+          "checkin":true,
+          "checkinConfirmationCode":"1231234154"
         }
       ]
     },{

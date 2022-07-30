@@ -123,3 +123,7 @@ function otpverification() {
       "OTP is invalid. Please try again!";
   }
 }
+
+menu.addEventListener("click", function () {
+  document.querySelector(".qrScan").classList.toggle("hide");
+});
