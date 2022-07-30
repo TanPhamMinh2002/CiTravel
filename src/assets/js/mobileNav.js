@@ -21,6 +21,14 @@ function doSomething() {
   menu.classList.remove("active");
   navbar.classList.remove("active");
   logo.classList.remove("active");
+  if (link[link.length - 1] == "search-res") {
+    document.querySelector(".qrScan").classList.remove("hide");
+  }
+  if (link[link.length - 1] == "checkin-success") {
+    document.getElementById("submitBtn").classList.remove("hide");
+    document.querySelector(".status .icon").classList.remove("hide");
+    document.getElementById("send").classList.remove("hide");
+  }
   if (
     !(link[link.length - 1] == "home" || link[link.length - 1] == "search-res")
   ) {
