@@ -17,10 +17,10 @@ function qrSend() {
         i < data[q].itinerary.confirmation[w].guest.length;
         i++
       ) {}
+      console.log(data[q].itinerary.confirmation[w].guest.length);
     })
     .catch((error) => {
       console.error(error);
     });
 }
-console.log(data[q].itinerary.confirmation[w].guest.length);
 qrSend();
