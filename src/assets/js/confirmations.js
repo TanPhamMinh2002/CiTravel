@@ -12,8 +12,12 @@ function displayInfo(url, q, w, e) {
       document.getElementById(
         "nights"
       ).innerText = `${data[q].itinerary.confirmation[w].nights} nights`;
-      document.getElementById("status").innerText =
-        data[q].itinerary.confirmation[w].status;
+      if (data[q].itinerary.confirmation[w].status == "Reserved") {
+        document.getElementById("status").innerText = "Preparing";
+      } else {
+        document.getElementById("status").innerText =
+          data[q].itinerary.confirmation[w].status;
+      }
 
       let bg_status = document.querySelector("#bg-status");
       let status = document.querySelector("#status");
