@@ -1,4 +1,74 @@
-app-search-res.active .title img{
-  object-position: 0 28%;
+app-search-res.active .title{
+  width: 100vw;
 }
-  app-search-res.active .title .content{}
+app-search-res.active .title img{
+  width: 100%;
+  height: 300px !important;
+  object-position: 0 -14.4rem;
+}
+  app-search-res.active .title .content{
+    top:-11.4rem !important;
+  }
+  app-search-res.active .title .content h2{
+    font-size: 2.6rem !important;
+
+  }
+  app-search-res.active .title .content p{
+    font-size: 1.2rem !important;
+  }
+
+app-search-res.active section{
+  padding:2.6rem 18%;
+}
+app-search-res.active .search-container{
+  margin-top:12.4rem;
+  border-radius: 40px 40px 0px 0px !important;
+}
+  app-search-res.active .search-container h2{
+    font-size: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  app-search-res.active .search-container form label{
+    font-size: 1.2rem !important;
+  }
+  app-search-res.active .input-container{
+    height: 50px;
+  }
+  app-search-res.active .search-container form input{
+    font-size: 1.2rem !important;
+  }
+    app-search-res.active .search-container form input::placeholder {
+      font-size: 1.2rem !important;
+    }
+    app-search-res.active .search-container form .inputBox{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-gap: 1.4rem;
+    }
+  app-search-res.active .search-container #popup{
+    padding-top: .6rem !important;
+    padding-bottom: 1.4rem !important;
+  }
+    app-search-res.active .search-container #popup.active{
+      font-size: 20px !important;
+    }
+    app-search-res.active .search-container .btn{
+      width: 50% !important;
+      height: 60px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+      app-search-res.active .search-container .btn p{
+        font-size: 24px !important;
+      }
+  app-search-res.active .qr-search p{
+    font-size: 24px !important;
+    margin: 2.4rem !important;
+  }
+  app-search-res.active .qrScan i{
+    font-size: 4.4rem !important;
+  }
+
+app-search-res.active .justforu{
+  margin-top: 20rem !important;
+}
