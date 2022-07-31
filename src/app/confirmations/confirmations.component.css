@@ -1,0 +1,143 @@
+.heading{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  margin-top: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 208px;
+  height: 202px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/*Reservation*/
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: .2rem;
+}
+  .title h2{
+    font-size: 18px;
+  }
+  .title p{
+    font-size: 12px;
+  }
+
+.location{
+  font-size: 12px;
+  font-weight: 400;
+  color:#333;
+  padding-left: 6%;
+}
+
+.info{
+  display: grid;
+  color:#484848;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,3rem);
+  justify-content: space-between;
+  grid-row-gap: 1rem;
+}
+  .info h3{
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .info p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .info #bg-status{
+    width: 86.9px;
+    padding: 3.1695px 6.339px;
+    border-radius: 15.8475px;
+    text-align: center;
+    /*background-color: rgba(39, 174, 96, 0.1); Display*/
+  }
+  .info #status{
+    font-size: 12px;
+    font-weight: 600;
+    /*color: #27ae60; Display*/
+  }
+  .info #bg-status.reserved{
+    background-color: rgba(39, 174, 96, 0.1);
+  }
+    .info #status.reserved{
+      color: #27ae60;
+    }
+  .info #bg-status.inhouse{
+    background-color: rgba(255, 215, 0, 0.1);
+  }
+    .info #status.inhouse{
+      color: rgb(224, 197, 18);
+    }
+  .info #bg-status.checkout{
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+    .info #status.checkout{
+      color: rgb(228, 59, 21);
+    }
+
+.lineBreak{
+  width:88%;
+  height: 0px;
+  border: 1.05417px solid #E8EAEC;
+  margin-left: auto;
+  margin-right: auto;
+}
+:host ::ng-deep .guestSection{
+  padding-top: 0;
+}
+  :host ::ng-deep .guestSection .guestType{
+    color: #484848;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: .64rem;
+    padding-top: 1.4rem;
+  }
+  :host ::ng-deep .boxInfo{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    border: 0.5px solid #B2BCCA;
+    border-radius: 4px;
+    justify-content: space-between;
+    height: 48px;
+    align-content: center;
+    padding: 0 3.4%;
+  }
+    :host ::ng-deep .guestName{
+      color: #333;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    :host ::ng-deep .guestStatus{
+      font-size: 12px;
+      font-weight: 500;
+    }
+      :host ::ng-deep .guestStatus.verified{
+        color: #00B517;
+      }
+      :host ::ng-deep .guestStatus.notVerified{
+        color: #F53838;
+      }
+  :host ::ng-deep .checkinBtn{
+    visibility: hidden;
+    width: 110px;
+    height: 32px;
+    background: #CF1607;
+    border-radius: 21.0835px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+    :host ::ng-deep .checkinBtn.active{
+      visibility: visible;
+    }
