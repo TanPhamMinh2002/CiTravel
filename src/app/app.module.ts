@@ -9,6 +9,7 @@ import { ArrivalTimeComponent } from './arrival-time/arrival-time.component';
 import { IdSubmitComponent } from './id-submit/id-submit.component';
 import { SelectCheckinComponent } from './select-checkin/select-checkin.component';
 import { CheckinSuccessComponent } from './checkin-success/checkin-success.component';
+import { ConfirmationsComponent } from './confirmations/confirmations.component';
 
 
 
@@ -22,6 +23,7 @@ import { CheckinSuccessComponent } from './checkin-success/checkin-success.compo
     IdSubmitComponent,
     SelectCheckinComponent,
     CheckinSuccessComponent,
+    ConfirmationsComponent,
   ],
   imports: [
     BrowserModule,

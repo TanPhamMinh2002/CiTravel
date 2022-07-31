@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArrivalTimeComponent } from './arrival-time/arrival-time.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { CheckinSuccessComponent } from './checkin-success/checkin-success.component';
+import { ConfirmationsComponent } from './confirmations/confirmations.component';
 import { HomeComponent } from './home/home.component';
 import { IdSubmitComponent } from './id-submit/id-submit.component';
 import { SearchResComponent } from './search-res/search-res.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'select-checkin', component: SelectCheckinComponent},
   {path: 'id-submit', component: IdSubmitComponent},
   {path: 'search-res', component: SearchResComponent},
-  {path: 'checkin-success', component: CheckinSuccessComponent}
+  {path: 'checkin-success', component: CheckinSuccessComponent},
+  {path: 'confirmations', component: ConfirmationsComponent}
 ];
 
 @NgModule({
