@@ -1,10 +1,15 @@
 
 /*Title*/
-.title img{
+.title{
   position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.title img{
+  position: relative;
   height: 240px;
   width:100%;
-  top:4%;
+  top:3.4rem;
   object-fit: cover;
   filter: brightness(64%);
   z-index: -7;
@@ -12,10 +17,10 @@
 
   /*Content title*/
   .title .content{
-    position: absolute;
+    position: relative;
     text-align: center;
     color: #fff;
-    top:14%;
+    top: -9.4rem;
     z-index: -7;
   }
 
@@ -42,6 +47,7 @@ section{
   border: 0.5px solid #B2BCCA;
   border-radius: 8px;
   margin-bottom: 1rem;
+  margin-top: .4rem;
 }
 
 /*Search Container*/
@@ -70,7 +76,6 @@ section{
       font-size: 0.75rem;
       font-weight: 400;
       color:#828282;
-      padding-bottom: .4rem;
     }
 
     .search-container form input{
@@ -78,7 +83,7 @@ section{
       margin-top: .8rem;
       margin-left: .6rem;
     }
-      .search-container form input ::placeholder{
+      .search-container form input::placeholder{
         font-size: 0.875rem;
         font-weight: 500;
         color:#c2c6cc;
@@ -131,8 +136,9 @@ section{
 
 
 .qrScan{
-  position: relative;
-  left: 39.4vw;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
   .qrScan.hide{
     z-index: -1;
@@ -144,23 +150,23 @@ section{
 
 /*Just For You*/
 .justforu {
+  padding:1rem 6%;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 6.4rem;
 }
-  .justforu .title {
-    position: relative;
+  .justforu .jfutitle {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 1rem;
   }
-  .justforu .title h2 {
+  .justforu .jfutitle h2 {
     color:#333333;
     font-size: 18px;
     font-weight: 700;
   }
 
-  .justforu .title a {
+  .justforu .jfutitle a {
     color:#CF1607;
     font-size: 14px;
     font-weight: 500;
