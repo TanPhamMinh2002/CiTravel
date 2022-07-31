@@ -13,7 +13,8 @@ if (
   !(
     link[link.length - 1] == "home" ||
     link[link.length - 1] == "search-res" ||
-    link[link.length - 1] == "#"
+    link[link.length - 1] == "#" ||
+    link[link.length - 1] == "confirmations"
   )
 ) {
   language.classList.remove("active");
@@ -41,7 +42,8 @@ function doSomething() {
     !(
       link[link.length - 1] == "home" ||
       link[link.length - 1] == "search-res" ||
-      link[link.length - 1] == "#"
+      link[link.length - 1] == "#" ||
+      link[link.length - 1] == "confirmations"
     )
   ) {
     language.classList.remove("active");
@@ -70,7 +72,8 @@ menu.addEventListener("click", () => {
     !(
       link[link.length - 1] == "home" ||
       link[link.length - 1] == "search-res" ||
-      link[link.length - 1] == "#"
+      link[link.length - 1] == "#" ||
+      link[link.length - 1] == "confirmations"
     )
   ) {
     language.classList.toggle("active");
