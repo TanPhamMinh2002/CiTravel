@@ -44,9 +44,25 @@
         </div>
       </nav>
 
-      <a class="sm-view account_settings">
+      <a class="sm-view account_settings" onclick="openList()">
         <i class="fa-solid fa-circle-user">&nbsp;</i>
       </a>
+      <div class="accountMenu sm-view" onclick="closeList()">
+        <div class="menuList">
+          <a href="#">Notifications</a>
+          <a href="#">Reservations</a>
+          <a href="#">Confirmations</a>
+          <a href="#">Wishlist</a>
+          <br />
+          <a href="#" class="smLink">Account</a>
+          <a href="#" class="smLink">Help Center</a>
+          <a href="#" class="smLink">Logout</a>
+          <div class="languageList">
+            <img src="assets/images/18.jpg" alt="" />
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
       <div class="language sm-view">
         <img src="assets/images/18.jpg" alt="" />
         <i class="fa-solid fa-angle-down"></i>

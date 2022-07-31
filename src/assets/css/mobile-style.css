@@ -122,14 +122,57 @@ header{
             width: 2.8rem;
           }
   header .account_settings{
-
     font-size: 1.4rem;
     color: #fff;
-
   }
   header .account_settings.active{
     display: none;
   }
+  header .accountMenu{
+    position:fixed;
+    width: 100%;
+    top:0;
+    left:120%;
+    min-height: 100vh;
+    background:rgba(0,0,0,.7);
+    z-index: 1000;
+  }
+    header .accountMenu.active{
+      left: 0;
+    }
+    header .accountMenu .menuList{
+      position: relative;
+      top: 8.4vh;
+      left: 46vw;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgba(194, 198, 204, 0.6);
+      border-radius: 6px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: .64rem 0 1.4rem 1rem;
+    }
+      header .accountMenu .menuList .smLink{
+        font-weight: 500;
+      }
+      header .accountMenu .menuList a{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #484848;
+      }
+        header .accountMenu .menuList .languageList{
+          display: grid;
+          grid-template-columns: auto auto;
+          justify-content: start;
+          padding-top: .64rem;
+          grid-gap: .4rem;
+        }
+          header .accountMenu .menuList .languageList img{
+            height: 17.86px;
+            width: 25px;
+            border-radius: 4px;
+          }
   header .language{
     display: grid;
     grid-template-columns: repeat(2,auto);
