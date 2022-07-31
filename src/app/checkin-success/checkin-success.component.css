@@ -10,11 +10,11 @@
     color:#00B517;
     margin-top: 3.4vh;
     font-size: 24px;
-    width: 12.4vw;
-    height: 7vh;
+    width: 48px;
+    height: 48px;
     left: 44vw;
     border: 2px solid #00B517;
-    border-radius: 44px;
+    border-radius: 48px;
   }
   .status .icon.hide{
     z-index: -1;
