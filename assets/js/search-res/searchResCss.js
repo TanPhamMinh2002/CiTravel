@@ -1,4 +1,4 @@
-(function (a, b, c, d) {
+(function (a) {
   if (
     /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|Android.+Firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
       a
@@ -7,12 +7,8 @@
       a.substr(0, 4)
     )
   )
-    document.write(c);
+    document.querySelector("app-search-res").classList.remove("active");
   else {
-    document.write(b);
+    document.querySelector("app-search-res").classList.add("active");
   }
-})(
-  navigator.userAgent || navigator.vendor || window.opera,
-  '<link rel="stylesheet" href="styles.css" />',
-  '<link rel="stylesheet" href="assets/css/mobile-style.css" />'
-);
+})(navigator.userAgent || navigator.vendor || window.opera);
